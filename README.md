@@ -1,2 +1,0 @@
-# chamados
-Sistema de chamados 
