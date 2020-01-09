@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c1445b-d242-4554-91a9-ecae4c5b5875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,16 +76,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="chamados: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ctrl@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ctrl: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="uptime: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
@@ -120,6 +107,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -144,11 +132,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@79dea62" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -166,26 +149,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578585891364</updated>
-      <workItem from="1578585893263" duration="5200000" />
+      <workItem from="1578585893263" duration="5235000" />
+      <workItem from="1578591180443" duration="334000" />
+      <workItem from="1578591538611" duration="11008000" />
     </task>
+    <task id="LOCAL-00001" summary="novos arquivos e configurações">
+      <created>1578591115805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578591115805</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="novos arquivos e configurações" />
+    <option name="LAST_COMMIT_MESSAGE" value="novos arquivos e configurações" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="-864" key="#Deployment" timestamp="1578586058520">
       <screen x="-280" y="-1050" width="1920" height="1050" />
     </state>
     <state x="272" y="-864" key="#Deployment/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578586058520" />
-    <state x="272" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578588698276">
-      <screen x="-280" y="-1040" width="1920" height="1040" />
+    <state x="272" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578600180024">
+      <screen x="-280" y="-1080" width="1920" height="1050" />
     </state>
     <state x="272" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578588698276" />
+    <state x="272" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578600180024" />
+    <state x="318" y="-930" key="CommitChangelistDialog2" timestamp="1578591114992">
+      <screen x="-280" y="-1040" width="1920" height="1040" />
+    </state>
+    <state x="318" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578591114992" />
     <state x="518" y="-627" width="347" height="198" key="Github.CreateGistDialog" timestamp="1578588479548">
       <screen x="-280" y="-1040" width="1920" height="1040" />
     </state>
     <state x="518" y="-627" width="347" height="198" key="Github.CreateGistDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578588479548" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1578592000666">
+      <screen x="-280" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578592000666" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1578592000666">
+      <screen x="-280" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578592000666" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1578592000665">
+      <screen x="-280" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578592000665" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1578592000666">
+      <screen x="-280" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578592000666" />
+    <state x="272" y="-831" key="Vcs.Push.Dialog.v2" timestamp="1578603302371">
+      <screen x="-280" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="272" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578591122004" />
+    <state x="272" y="-831" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578603302371" />
     <state x="544" y="-618" key="WebDeployment.AddServerDialog.v.1" timestamp="1578586027222">
       <screen x="-280" y="-1050" width="1920" height="1050" />
     </state>
@@ -194,9 +217,14 @@
       <screen x="-280" y="-1040" width="1920" height="1040" />
     </state>
     <state x="576" y="-646" width="319" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578589567370" />
-    <state x="396" y="-878" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578589338146">
-      <screen x="-280" y="-1040" width="1920" height="1040" />
+    <state x="396" y="-918" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578591989489">
+      <screen x="-280" y="-1080" width="1920" height="1040" />
     </state>
     <state x="396" y="-878" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578589338146" />
+    <state x="396" y="-918" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578591989489" />
+    <state x="388" y="-733" key="com.intellij.ide.util.TipDialog" timestamp="1578591538596">
+      <screen x="-280" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="388" y="-733" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578591538596" />
   </component>
 </project>
