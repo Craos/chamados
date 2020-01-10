@@ -1,22 +1,21 @@
 var formStructure = [
 
-    {type:"settings", position:"label-left", offsetLeft: 20, labelWidth:90,  labelAlign: "right"},
+    {type:"settings", position:"label-left", offsetLeft: 50, labelWidth:90,  labelAlign: "right"},
 
-    {type:"input", name:"form_datainicio", label:"Data Inicial: "},
-    {type:"input", name:"form_horainicio", label:"Horario Inicial: "},
-    {type: "combo", label: "Cliente: ", name: "form_cliente", options:[
+    {type:"input", name:"data_inicio", label:"Data Inicial: ", value: window.dhx.date2str(new Date(), '%d/%m/%Y')},
+    {type:"input", name:"hora_inicio", label:"Horario Inicial: ", value: window.dhx.date2str(new Date(), '%H:%i:%s')},
+    {type: "combo", label: "Cliente: ", name: "cliente", options:[
             {text: "Selecione um Condomínio", value: "valesca", selected: true, labelAlign: "right", label: "Internal Color"},
-            {text: "Condominio Valesca", value: "valesca"},
-            {text: "Condominio Balesca", value: "balesca"},
-            {text: "Condominio Antuerpia", value: "antuerpia"},
-            {text: "Central Security", value: "security"},
-
-
+            {text: "Condominio Valesca", value: "Condominio Valesca"},
+            {text: "Condominio Balesca", value: "Condominio Balesca"},
+            {text: "Condominio Antuerpia", value: "Condominio Antuerpia"},
+            {text: "Central Security", value: "Central Security"},
         ]},
-    {type:"input", name:"form_equipamento", label:"Equipamento: "},
 
-    {type:'input', name:'Description', label:'Description:', inputWidth:250, labelAlign:'right', offsetLeft: 20},
 
+    {type:"input", name:"equipamento", label:"Equipamento: "},
+
+    {type:'input', name:'descricao', label:'Descrição do Equipamento:', inputWidth:250, labelAlign:'right', offsetLeft: 20},
 
     {type:"newcolumn", offset:20},
 

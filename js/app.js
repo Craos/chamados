@@ -1,66 +1,61 @@
 $(document).ready(function () {
 
+    let that = this;
+
     var mySidebar = new dhtmlXSideBar({
 
-        parent:         document.body,   // id/object, container for sidebar
-         template:       "icons",      // string, used template, "details" by default
-        icons_path:     "icons/",       // string, path to the folder with icons
-        single_cell:    false,           // boolean, true to enable the single cell mode
-        bubble:         6,              // number, marker to show number of notifications
-        width:          50,            // number, width of the left part
-        header:         true,           // boolean, true to enable the header
-        autohide:       false,          // boolean, true to autohide the navigation bar
-        xml:            "sidebar.xml",  // string, path to xml config, optional
-        json:           "sidebar.json", // string, path to json config, optional
-        onload:         function(){},   // function, callback for xml/json, optional
+        parent:         document.body,
+         template:       "icons",
+        icons_path:     "icons/",
+        single_cell:    false,
+        bubble:         6,
+        width:          50,
+        header:         true,
+        autohide:       false,
+        xml:            "sidebar.xml",
+        json:           "sidebar.json",
+        onload:         function(){},
         items: [
-            // items config
             {
-                id:         "chamados",       // item id
-                text:       "Chamados",     // item text
-                icon:       "../img/chamado.png",   // icon used for the item
-                selected:   true        // boolean, true to select an item
+                id:         "chamados",
+                text:       "Controle de Eventos",
+                icon:       "../img/chamado.png",
+                selected:   true
             },
             // separator config
             {
-                id:         "sep1",     // separator id
-                type:       "separator" // item type, mandatory
+                id:         "sep1",
+                type:       "separator"
             },
             {
-                id:         "configuracoes",       // item id
-                text:       "Configurações",     // item text
-                icon:       "../img/configuracoes.png",   // icon used for the item
-                selected:   false        // boolean, true to select an item
+                id:         "configuracoes",
+                text:       "Configurações",
+                icon:       "../img/configuracoes.png",
+                selected:   false
             },
-
         ]
-
     });
 
-
-
     let layout = mySidebar.cells('chamados').attachLayout({
-        pattern:    "2E",           // string, layout's pattern
+        pattern:    "2E",
 
 
-        offsets: {          // optional, offsets for fullscreen init
-            top:    5,     // you can specify all four sides
-            right:  10,     // or only the side where you want to have an offset
+        offsets: {
+            top:    5,
+            right:  10,
             bottom: 5,
             left:   10
         },
 
-        cells: [    // optional, cells configuration according to the pattern
-            // you can specify only the cells you want to configure
-            // all params are optional
+        cells: [
             {
-                id: "a",        // id of the cell you want to configure
+                id: "a",
                 text: "Novo Cadastro",
                 header: false,
 
             },
             {
-                id: "b",        // id of the cell you want to configure
+                id: "b",
                 header: false,
             },
         ]
@@ -69,35 +64,65 @@ $(document).ready(function () {
 
     layout.cells('a').attachToolbar({
         items:[
-            {id: "novoevento", type: "buttonTwoState", text: "Novo Evento", img: "./img/new.png"},
-            {id: "cancelar", type: "buttonTwoState", text: "Cancelar", img: "./img/cancel.png"},
+            {id: "novoevento", type: "button", text: "Novo Chamado", img: "./img/new.png"},
+            {id: "finalizar", type: "button", text: "Finalizar Chamado", img: "./img/finalizarchamado.png"},
             {id: "sep1", type: "separator" },
-            {id: "cancelar", type: "buttonTwoState", img: "./img/ajuda.png"},
-
+            {id: "enviar", type: "button", text: "Enviar", img: "./img/enviarchamado.png"},
+            {id: "excluir", type: "button", text: "Excluir", img: "./img/cancelarchamado.png"},
+            {id: "sep1", type: "separator" },
+            {id: "ajuda", type: "button", img: "./img/ajuda.png"},
         ],
 
         onClick: function (id) {
-                console.debug(id);
+                if (id === 'enviar') {
+                    Enviar(formulario.getFormData(), atualizargrid);
+                } else if (id === 'finalizar'){
+
+                }
         }
 
     });
 
     let formulario = layout.cells("a").attachForm(formStructure);
 
-
-
-
     let chamados = layout.cells('b').attachGrid();
-    chamados.setHeader("Data Inicio,Hora Inicio,Descrição do Equipamento,Local,Data de Retorno,Horario de Retorno");//the headers of columns
+    chamados.setHeader("Data Inicio,Hora Inicio,Descrição do Equipamento,Cliente,Data de Retorno,Horario de Retorno");
+    chamados.setInitWidths("150,150,400,300,130,130");
+    chamados.setColAlign("left,left,left,left");
+    chamados.setColSorting("int,str,str,int");
     chamados.init();
 
-    $.get( "http://api.craos.net/ck/uptime", function( data ) {
-        data.filter(function (item) {
-            console.debug(item);
-            chamados.addRow(item.id, [item.data_inicio, item.id, item.hora_inicio, item.equipamento, item.local, item.data_final, item.hora_final]);
+    function atualizargrid() {
+
+        chamados.clearAll();
+        $.get( "http://api/ck/uptime", function( data ) {
+            data.filter(function (item) {
+                let data_inicio = window.dhx.date2str(new Date(item.data_inicio), '%d/%m/%Y');
+                let data_final = window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y');
+                let hora_final = window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s');
+
+                chamados.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.cliente, data_final, hora_final]);
+            });
         });
-    });
 
-
-
+    }
+    atualizargrid();
 });
+
+let Enviar = function(data, callback) {
+    $.ajax({
+        type: "POST",
+        url: 'http://api/ck/uptime',
+        dataType: "json",
+        headers: {
+            Prefer: "return=representation",
+            Accept: "application/vnd.pgrst.object+json"
+        },
+        success: function () {
+            callback()
+        },
+        data: data
+    }).fail(function (jqXHR) {
+        console.debug('Ocorreu algum erro ao tentar conectar-se ao banco de dados.')
+    });
+};
