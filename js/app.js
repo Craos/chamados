@@ -18,8 +18,19 @@ $(document).ready(function () {
         items: [
             {
                 id:         "chamados",
-                text:       "Registro de Eventos",
+                text:       "Abertura de Chamado",
                 icon:       "../img/chamado.png",
+                selected:   true
+            },
+            // separator config
+            {
+                id:         "sep1",
+                type:       "separator"
+            },
+            {
+                id:         "registros",
+                text:       "Registro de Eventos",
+                icon:       "../img/registro.png",
                 selected:   true
             },
             // separator config
@@ -36,7 +47,7 @@ $(document).ready(function () {
         ]
     });
 
-    let layout = mySidebar.cells('chamados').attachLayout({
+    let layout = mySidebar.cells('registros').attachLayout({
         pattern:    "2E",
 
 
@@ -57,6 +68,8 @@ $(document).ready(function () {
             {
                 id: "b",
                 header: false,
+                height: 280,
+                fix_size: [true,null],
             },
         ]
     });
@@ -75,19 +88,35 @@ $(document).ready(function () {
 
         onClick: function (id) {
                 if (id === 'enviar') {
-                    Enviar(formulario.getFormData(), atualizargrid);
+                    let dados = formulario.getFormData();
+                    dados.situacao = 'Em aberto';
+                    Enviar(dados, atualizargrid);
+
+                    dhtmlx.message.position="top";
+                    dhtmlx.message("Registro enviado com Sucesso!");
+
                 } else if (id === 'finalizar'){
-                    finalizar(chamados.getSelectedRowId(), atualizargrid);
+                    dhtmlx.message.position="top";
+                    dhtmlx.message("Registro enviado com Sucesso!");
+                    if (registros.getSelectedRowId() === null){
+                        dhtmlx.message('Houve um erro ao aplicar um retorno. Por favor, insira um novo registro e tente novamente.');
+                        dhtmlx.alert({
+                            title:"Aviso!",
+                            type:"alert-error",
+                            text:"Faça um novo Registro para continuar com a operação!"
+                        });
+                    }
+                    finalizar(registros.getSelectedRowId(), atualizargrid);
                 } else if(id === 'novoevento'){
                     formulario.clear();
 
                     formulario.setItemValue('data_inicio', window.dhx.date2str(new Date(), '%d/%m/%Y'));
-                    formulario.setItemValue('hora_inicio', window.dhx.date2str(new Date(), '%H:%i:%s'))
+                    formulario.setItemValue('hora_inicio', window.dhx.date2str(new Date(), '%H:%i:%s'));
 
                 }else if(id === 'excluir'){
                     $.ajax({
                         type: "DELETE",
-                        url: 'http://api/ck/uptime?id=eq.' + chamados.getSelectedRowId(),
+                        url: 'http://api/ck/uptime?id=eq.' + registros.getSelectedRowId(),
                         dataType: "json",
                         headers: {
                             Prefer: "return=representation",
@@ -95,6 +124,8 @@ $(document).ready(function () {
                         },
                         success: function () {
                             atualizargrid();
+                            dhtmlx.message.position="top";
+                            dhtmlx.message("Registro excluido.");
                         },
                     }).fail(function (jqXHR) {
                         console.debug('Ocorreu algum erro ao tentar conectar-se ao banco de dados.')
@@ -106,16 +137,16 @@ $(document).ready(function () {
 
     let formulario = layout.cells("a").attachForm(formStructure);
 
-    let chamados = layout.cells('b').attachGrid();
-    chamados.setHeader("Data Inicio,Hora Inicio,Descrição do Equipamento,Cliente,Situação,Data de Retorno,Horario de Retorno");
-    chamados.setInitWidths("150,150,400,200,130,130,130");
-    chamados.setColAlign("left,left,left,left");
-    chamados.setColSorting("int,str,str,int");
-    chamados.init();
+    let registros = layout.cells('b').attachGrid();
+    registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Cliente, Situação, Data de Retorno, Horario de Retorno");
+    registros.setInitWidths("100,100,150,400,150,100,100");
+    registros.setColAlign("left,left,left,left");
+    registros.setColSorting("int,str,str,int");
+    registros.init();
 
     function atualizargrid() {
 
-        chamados.clearAll();
+        registros.clearAll();
         $.get( "http://api/ck/uptime", function( data ) {
             data.filter(function (item) {
 
@@ -124,7 +155,8 @@ $(document).ready(function () {
                 let data_final = (item.data_final !== null) ? window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y') : null;
                 let hora_final = (item.hora_final !== null) ? window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s') : null;
 
-                chamados.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.cliente,  item.situacao, data_final, hora_final]);
+
+                registros.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.descricao, item.cliente,  item.situacao, data_final, hora_final, item.situacao]);
             });
         });
 

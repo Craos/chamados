@@ -7,12 +7,13 @@ var formStructure = [
     {type: "combo", label: "Cliente: ", name: "cliente", required:true, options:[
             {text: "Selecione um Condomínio", value: "valesca", selected: true, labelAlign: "right", label: "Internal Color"},
             {text: "Condominio Valesca", value: "Condominio Valesca"},
-            {text: "Condominio Balesca", value: "Condominio Balesca"},
+            {text: "Condominio Bavesca", value: "Condominio Bavesca"},
             {text: "Condominio Antuerpia", value: "Condominio Antuerpia"},
             {text: "Academia Horizon", value: "Academia Horizon"},
             {text: "Crossfit Barba Negra", value: "Crossfit Barba Negra"},
+            {text: "Central Security", value: "Central Security"},
+            {text: "Central Craos", value: "Central Craos"},
 
-            {text: "Central Security", value: "security"},
         ]},
     {type: "combo", name:"equipamento", label:"Equipamento: ", required:true, options:[
             {text: "Selecione um Equipamento", value: "Nenhum", selected: true, labelAlign: "right", label: "Internal Color"},
