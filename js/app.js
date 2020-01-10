@@ -18,7 +18,7 @@ $(document).ready(function () {
         items: [
             {
                 id:         "chamados",
-                text:       "Controle de Eventos",
+                text:       "Registro de Eventos",
                 icon:       "../img/chamado.png",
                 selected:   true
             },
@@ -64,11 +64,11 @@ $(document).ready(function () {
 
     layout.cells('a').attachToolbar({
         items:[
-            {id: "novoevento", type: "button", text: "Novo Chamado", img: "./img/new.png"},
-            {id: "finalizar", type: "button", text: "Finalizar Chamado", img: "./img/finalizarchamado.png"},
+            {id: "novoevento", type: "button", text: "Novo Registro", img: "./img/novo.png"},
+            {id: "enviar", type: "button", text: "Salvar Registro", img: "./img/salvar.png"},
             {id: "sep1", type: "separator" },
-            {id: "enviar", type: "button", text: "Enviar", img: "./img/enviarchamado.png"},
-            {id: "excluir", type: "button", text: "Excluir", img: "./img/cancelarchamado.png"},
+            {id: "finalizar", type: "button", text: "Aplicar Retorno", img: "./img/retorno.png"},
+            {id: "excluir", type: "button", text: "Excluir", img: "./img/excluir.png"},
             {id: "sep1", type: "separator" },
             {id: "ajuda", type: "button", img: "./img/ajuda.png"},
         ],
@@ -77,7 +77,7 @@ $(document).ready(function () {
                 if (id === 'enviar') {
                     Enviar(formulario.getFormData(), atualizargrid);
                 } else if (id === 'finalizar'){
-
+                    finalizar(chamados.getSelectedRowId(), atualizargrid);
                 }
         }
 
@@ -86,8 +86,8 @@ $(document).ready(function () {
     let formulario = layout.cells("a").attachForm(formStructure);
 
     let chamados = layout.cells('b').attachGrid();
-    chamados.setHeader("Data Inicio,Hora Inicio,Descrição do Equipamento,Cliente,Data de Retorno,Horario de Retorno");
-    chamados.setInitWidths("150,150,400,300,130,130");
+    chamados.setHeader("Data Inicio,Hora Inicio,Descrição do Equipamento,Cliente,Situação,Data de Retorno,Horario de Retorno");
+    chamados.setInitWidths("150,150,400,200,130,130,130");
     chamados.setColAlign("left,left,left,left");
     chamados.setColSorting("int,str,str,int");
     chamados.init();
@@ -97,16 +97,40 @@ $(document).ready(function () {
         chamados.clearAll();
         $.get( "http://api/ck/uptime", function( data ) {
             data.filter(function (item) {
-                let data_inicio = window.dhx.date2str(new Date(item.data_inicio), '%d/%m/%Y');
-                let data_final = window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y');
-                let hora_final = window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s');
 
-                chamados.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.cliente, data_final, hora_final]);
+
+                let data_inicio = window.dhx.date2str(new Date(item.data_inicio), '%d/%m/%Y');
+                let data_final = (item.data_final !== null) ? window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y') : null;
+                let hora_final = (item.hora_final !== null) ? window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s') : null;
+
+                chamados.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.cliente,  item.situacao, data_final, hora_final]);
             });
         });
 
     }
     atualizargrid();
+
+    function finalizar(id, callback) {
+        $.ajax({
+            type: "PATCH",
+            url: 'http://api/ck/uptime?id=eq.' + id,
+            dataType: "json",
+            headers: {
+                Prefer: "return=representation",
+                Accept: "application/vnd.pgrst.object+json"
+            },
+            success: function () {
+                callback()
+            },
+            data: {
+                data_final: window.dhx.date2str(new Date(), '%d/%m/%Y'),
+                hora_final: window.dhx.date2str(new Date(), '%H:%i:%s'),
+                situacao: 'Retornou'
+            }
+        }).fail(function (jqXHR) {
+            console.debug('Ocorreu algum erro ao tentar conectar-se ao banco de dados.')
+        });
+    }
 });
 
 let Enviar = function(data, callback) {
