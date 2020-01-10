@@ -78,6 +78,27 @@ $(document).ready(function () {
                     Enviar(formulario.getFormData(), atualizargrid);
                 } else if (id === 'finalizar'){
                     finalizar(chamados.getSelectedRowId(), atualizargrid);
+                } else if(id === 'novoevento'){
+                    formulario.clear();
+
+                    formulario.setItemValue('data_inicio', window.dhx.date2str(new Date(), '%d/%m/%Y'));
+                    formulario.setItemValue('hora_inicio', window.dhx.date2str(new Date(), '%H:%i:%s'))
+
+                }else if(id === 'excluir'){
+                    $.ajax({
+                        type: "DELETE",
+                        url: 'http://api/ck/uptime?id=eq.' + chamados.getSelectedRowId(),
+                        dataType: "json",
+                        headers: {
+                            Prefer: "return=representation",
+                            Accept: "application/vnd.pgrst.object+json"
+                        },
+                        success: function () {
+                            atualizargrid();
+                        },
+                    }).fail(function (jqXHR) {
+                        console.debug('Ocorreu algum erro ao tentar conectar-se ao banco de dados.')
+                    });
                 }
         }
 

@@ -1,6 +1,6 @@
 var formStructure = [
 
-    {type:"settings", position:"label-left", offsetLeft: 15, labelWidth:200,  labelAlign: "left",  inputWidth:300, inputLeft:97, inputTop:110,},
+    {type:"settings", position:"label-left", offsetLeft: 15, labelWidth:150,  labelAlign: "left",  inputWidth:300, inputLeft:97, inputTop:110,},
 
     {type:"input", name:"data_inicio", label:"Data Inicial: ", value: window.dhx.date2str(new Date(), '%d/%m/%Y')},
     {type:"input", name:"hora_inicio", label:"Horario Inicial: ", value: window.dhx.date2str(new Date(), '%H:%i:%s')},
@@ -14,8 +14,6 @@ var formStructure = [
 
             {text: "Central Security", value: "security"},
         ]},
-
-
     {type: "combo", name:"equipamento", label:"Equipamento: ", required:true, options:[
             {text: "Selecione um Equipamento", value: "Nenhum", selected: true, labelAlign: "right", label: "Internal Color"},
             {text: "VoIP", value: "VoIP"},
@@ -25,8 +23,6 @@ var formStructure = [
             {text: "Alarme", value: "Alarme"},
             {text: "Portão", value: "Portão"},
         ]},
-
-
     {
         type: "input",
         name: 'descricao',
