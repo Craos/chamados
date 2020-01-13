@@ -15,7 +15,7 @@ $(document).ready(function () {
         items: [
             {
                 id:         "dashboard",
-                text:       "Dashboard",
+                text:       " Dashboard",
                 icon:       "../img/dashboard.png",
                 selected:   false
             },
@@ -25,7 +25,7 @@ $(document).ready(function () {
             },
             {
                 id:         "chamados",
-                text:       "Abertura de Chamado",
+                text:       " Abertura de Chamado",
                 icon:       "../img/chamado.png",
                 selected:   true
             },
@@ -35,7 +35,7 @@ $(document).ready(function () {
             },
             {
                 id:         "registros",
-                text:       "Registro de Eventos",
+                text:       " Registro de Eventos",
                 icon:       "../img/registro.png",
                 selected:   false
             },
@@ -45,7 +45,7 @@ $(document).ready(function () {
             },
             {
                 id:         "fila",
-                text:       "Fila Geral de Chamados",
+                text:       " Fila Geral de Chamados",
                 icon:       "../img/fila.png",
                 selected:   false
             },
@@ -55,7 +55,7 @@ $(document).ready(function () {
             },
             {
                 id:         "configuracoes",
-                text:       "Configurações",
+                text:       " Configurações",
                 icon:       "../img/configuracoes.png",
                 selected:   false
             },
