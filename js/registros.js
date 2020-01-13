@@ -20,7 +20,8 @@ function registros() {
             },
             {
                 id: "b",
-                header: false,
+                header: true,
+                text: "Eventos Registrados",
                 height: 280,
                 fix_size: [true,null],
             },

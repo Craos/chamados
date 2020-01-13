@@ -18,7 +18,8 @@ function chamados() {
             },
             {
                 id: "b",
-                header: false,
+                header: true,
+                text: "Chamados Registrados",
                 height: 280,
                 fix_size: [true,null],
             },

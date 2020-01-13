@@ -5,3 +5,8 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+div.dhxlayout_base_material div.dhx_cell_layout div.dhx_cell_hdr{
+    background-color: #212a2f;
+    color: white;
+}
