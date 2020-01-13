@@ -41,8 +41,9 @@ var Form_Chamados = [
 
     {type:"input", name:"filedate", label:"Data: ", value: window.dhx.date2str(new Date(), '%d/%m/%Y')},
 
-    {type:"input", required:true, name:"solicitacao", label:"Assunto: "},
+    {type: "combo", name:"cliente", label:"Cliente: ", required:true},
 
+    {type:"input", required:true, name:"assunto", label:"Assunto: "},
     {
         type: "input",
         name: 'solicitacao',
@@ -52,12 +53,9 @@ var Form_Chamados = [
         note: {text: "Descreva informações necessárias para abertura do chamado."}
         },
 
-
-
     {type: "newcolumn", offset: 20},
 
-    {type:"input", name:"numero", label:"Chamado Número: ",},
-    {type:"input", name:"solicitante", label:"Solicitante: ",},
+    {type:"input", name:"solicitante", label:"Solicitante: ", required: true},
 
 
 ];

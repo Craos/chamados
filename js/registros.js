@@ -29,14 +29,15 @@ function registros() {
 
 
     layout.cells('a').attachToolbar({
+        iconset: "awesome",
         items:[
-            {id: "novoevento", type: "button", text: "Novo", img: "./img/novo.png"},
-            {id: "enviar", type: "button", text: "Salvar", img: "./img/salvar.png"},
+            {id: "novoevento", type: "button", text: "Novo", img: "fas fa-plus"},
+            {id: "enviar", type: "button", text: "Enviar", img: "fas fa-share"},
             {id: "sep1", type: "separator" },
-            {id: "finalizar", type: "button", text: "Finalizar", img: "./img/retorno.png"},
-            {id: "excluir", type: "button", text: "Excluir", img: "./img/excluir.png"},
+            {id: "finalizar", type: "button", text: "Finalizar", img: "fas fa-check-double"},
+            {id: "excluir", type: "button", text: "Excluir", img: "far fa-trash-alt"},
             {id: "sep1", type: "separator" },
-            {id: "ajuda", type: "button", img: "./img/ajuda.png"},
+            {id: "ajuda", type: "button", img: "fas fa-question-circle"},
         ],
 
         onClick: function (id) {

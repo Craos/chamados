@@ -26,19 +26,20 @@ function chamados() {
     });
 
     layoutchamados.cells('a').attachToolbar({
+        iconset: "awesome",
         items:[
-            {id: "novo", type: "button", text: "Novo", img: "./img/novo.png"},
-            {id: "enviar", type: "button", text: "Enviar", img: "./img/salvar.png"},
+            {id: "novo", type: "button", text: "Novo", img: "fas fa-plus"},
+            {id: "enviar", type: "button", text: "Enviar", img: "fas fa-share"},
             {id: "sep1", type: "separator" },
-            {id: "excluir", type: "button", text: "Excluir", img: "./img/excluir.png"},
+            {id: "excluir", type: "button", text: "Excluir", img: "far fa-trash-alt"},
             {id: "sep1", type: "separator" },
-            {id: "ajuda", type: "button", img: "./img/ajuda.png"},
+            {id: "ajuda", type: "button", img: "fas fa-question-circle"},
         ],
 
         onClick: function (id) {
             if (id === 'enviar') {
-                let dados = formulario.getFormData();
-                Enviar(dados);
+                let dados = form_chamados.getFormData();
+                enviarchamado(dados, atualizargrid);
 
                 dhtmlx.message.position="top";
                 dhtmlx.message("Registro enviado com Sucesso!");
@@ -55,16 +56,10 @@ function chamados() {
                     });
                 }
                 finalizar(registros.getSelectedRowId(), atualizargrid);
-            } else if(id === 'novoevento'){
-                formulario.clear();
-
-                formulario.setItemValue('data_inicio', window.dhx.date2str(new Date(), '%d/%m/%Y'));
-                formulario.setItemValue('hora_inicio', window.dhx.date2str(new Date(), '%H:%i:%s'));
-
-            }else if(id === 'excluir'){
+            } else if(id === 'excluir'){
                 $.ajax({
                     type: "DELETE",
-                    url: 'http://api/ck/uptime?id=eq.' + registros.getSelectedRowId(),
+                    url: 'http://192.168.2.220/ck/chamados?id=eq.' + chamadoslayout.getSelectedRowId(),
                     dataType: "json",
                     headers: {
                         Prefer: "return=representation",
@@ -80,30 +75,58 @@ function chamados() {
                 });
             }
         }
-
     });
 
-    let formulario =   layoutchamados.cells("a").attachForm(Form_Chamados);
+    let form_chamados = layoutchamados.cells("a").attachForm();
 
-    let chamados = layoutchamados.cells('b').attachGrid();
+    form_chamados.loadStruct(Form_Chamados, function () {
 
-    chamados.setHeader("Chamado, Data, Assunto, Solicitação, Solicitante");
-    chamados.setInitWidths("100,100,400,400,100");
-    chamados.setColAlign("left,left,left,left");
-    chamados.setColSorting("int,int,str,str,str");
-    chamados.init();
+        let comboclientes = form_chamados.getCombo('cliente');
 
-    let Enviar = function(data, callback) {
+        listarclientes(function (response) {
+
+            let itens = [];
+           response.filter(function (item) {
+               itens.push({value: item.id, text: item.nome});
+           });
+            comboclientes.addOption(itens);
+
+        });
+    });
+    let chamadoslayout = layoutchamados.cells('b').attachGrid();
+
+    chamadoslayout.setHeader("Chamado, Data, Assunto, Solicitação, Solicitante");
+    chamadoslayout.setInitWidths("80,135,400,400");
+    chamadoslayout.setColAlign("center,left,left,left");
+    chamadoslayout.init();
+
+    atualizargrid();
+
+    function atualizargrid() {
+
+        chamadoslayout.clearAll();
+
+        $.get( "http://192.168.2.220/ck/chamados", function( data ) {
+            data.filter(function (item) {
+
+                let filedate = window.dhx.date2str(new Date(item.filedate), '%d/%m/%Y - %H:%i');
+
+                chamadoslayout.addRow(item.id, [item.numero, filedate, item.assunto, item.solicitacao, item.solicitante]);
+            });
+        });
+    };
+
+        let enviarchamado = function(data, callback) {
         $.ajax({
             type: "POST",
-            url: 'http://api/ck/chamados',
+            url: 'http://192.168.2.220/ck/chamados',
             dataType: "json",
             headers: {
                 Prefer: "return=representation",
                 Accept: "application/vnd.pgrst.object+json"
             },
             success: function () {
-                callback()
+                callback();
             },
             data: data
         }).fail(function (jqXHR) {
