@@ -1,4 +1,4 @@
-var mySidebar;
+var mySidebar, situacoes;
 
 $(document).ready(function () {
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
                 id:         "dashboard",
                 text:       " Dashboard",
                 icon:       "../img/dashboard.png",
-                selected:   false
+                selected:   true
             },
             {
                 id:         "sep1",
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 id:         "chamados",
                 text:       " Abertura de Chamado",
                 icon:       "../img/chamado.png",
-                selected:   true
+                selected:   false
             },
             {
                 id:         "sep1",
@@ -68,14 +68,17 @@ $(document).ready(function () {
             chamados();
         }else if (id === 'registros'){
             registros();
-        }else if (id === 'fila'){
-
+        }else if (id === 'dashboard'){
+            dashboard();
         }else if (id === 'configuracoes'){
 
         }
     });
 
-    chamados();
+    situacaochamado(function (response) {
+        situacoes = response;
+    });
 
+    dashboard();
 
 });
