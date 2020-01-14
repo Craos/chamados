@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/chamados.iml" filepath="$PROJECT_DIR$/.idea/chamados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" filepath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" />
     </modules>
   </component>
 </project>

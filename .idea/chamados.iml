@@ -8,5 +8,10 @@
     <orderEntry type="library" name="jquery-3.2.1" level="application" />
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
     <orderEntry type="library" name="roboto" level="application" />
+    <orderEntry type="module" module-name="craos-material" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="module" module-name="craos-material" />
+    <orderEntry type="library" name="mdb" level="application" />
+    <orderEntry type="library" name="popper" level="application" />
   </component>
 </module>
