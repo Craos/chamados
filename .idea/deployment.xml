@@ -9,6 +9,14 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="Oberdan">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../verticals-portal" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>

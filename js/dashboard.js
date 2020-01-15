@@ -79,7 +79,45 @@ function dashboard() {
 
     atualizargrid_chamados();
 
+    layoutdashboard.attachEvent('onContentLoaded', function (id) {
+
+        let ifr = layoutdashboard.cells(id).getFrame();
+        let documento = ifr.contentWindow.document;
+
+
+        $.get( "http://192.168.2.220/ck/dashboard_chamados_resumo", function( data ) {
+
+            let tpl = documento.getElementById('barras');
+
+            data.filter(function (item) {
+
+                let barra = tpl.content.cloneNode(true);
+                barra.getElementById('porcentagem').style.width = item.percent;
+                barra.getElementById('porcentagem').style.backgroundColor = item.cor;
+                barra.getElementById('descricao').innerText = item.situacao + ' ' + item.percent;
+
+                console.debug(barra.getElementById('porcentagem'));
+                ifr.contentWindow.document.getElementById('data_container').appendChild(barra);
+
+            });
+            documento.getElementById('chamados').innerHTML = data.chamados;
+
+
+            $.get( "http://192.168.2.220/ck/dashboard_chamados_max", function( data ) {
+
+                documento.getElementById('icone').innerText = data[0].img;
+
+            });
+
+
+        });
+    });
 
     let dashboardscreen = layoutdashboard.cells('a').attachURL("chart.html", null, {fname: "Mike", hobby: "fishing"});
+
+
+
+
+
 
 }
