@@ -9,7 +9,6 @@
     <script type="text/javascript" src="http://localhost/lib/jquery/jquery-3.4.1.js"></script>
     <link type="text/css" rel="stylesheet" href="http://localhost/lib/dhtmlx/skins/material/dhtmlx.css">
     <link rel="stylesheet" type="text/css" href="http://localhost/lib/dhtmlx/codebase/fonts/font_roboto/roboto.css"/>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="http://localhost/lib/mdb/css/bootstrap.min.css">
@@ -18,147 +17,53 @@
     <script type="text/javascript" src="http://localhost/lib/mdb/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://localhost/lib/mdb/js/mdb.min.js"></script>
 
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
 <div class="container my-5 py-5">
-    <!--Section Block Content-->
-    <section>
-        <div class="">
-            <div class="card-body mr-md-1">
-                <!--Grid row-->
-                <div class="row mb-3">
-                    <!--Grid column-->
-                    <div class="col-md-8 mb-4">
-                        <canvas id="barChart" height="100"></canvas>
-                    </div>
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1 mb-md-0">
-
-                        <h5 class="text-center font-weight-bold mb-4">E-commerce data</h5>
-
-                        <div class="d-flex justify-content-between">
-                            <small class="text-muted">Add products to cart</small>
-                            <small><span><strong>160</strong></span>/<span></span>200</small>
-                        </div>
-                        <div class="progress md-progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="55"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-                            <small class="text-muted">Complete Purchase</small>
-                            <small><span><strong>310</strong></span>/<span></span>400</small>
-                        </div>
-                        <div class="progress md-progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-                            <small class="text-muted">Visit Premium Page</small>
-                            <small><span><strong>480</strong></span>/<span></span>800</small>
-                        </div>
-                        <div class="progress md-progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-                            <small class="text-muted">Send Inquiries</small>
-                            <small><span><strong>250</strong></span>/<span></span>500</small>
-                        </div>
-                        <div class="progress md-progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
+    <section style="margin-top: -13%">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card mt-3">
+                    <div class="">
+                        <i class="far fa-money-bill-alt fa-lg cor-padrao z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
+                        <div class="float-right text-right p-3">
+                            <p class="text-uppercase text-muted mb-1"><small>Ticket Panel</small></p>
+                            <span class="badge cor-padrao ml-2"><span>4</span> Chamados na Fila</span>
+<!--                            <h4 class="font-weight-bold mb-0">CHAMADOS NA FILA</h4>-->
                         </div>
                     </div>
-                    <!--Grid column-->
+
+                    <div class="card-body pt-0">
+                        <div class="progress md-progress">
+                            <div class="progress-bar aberto" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text">Chamados em Aberto (25%)</p>
+                    </div>
+
+                    <div class="card-body pt-0">
+                        <div class="progress md-progress">
+                            <div class="progress-bar pendente" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text">Chamados Pendentes (75%)</p>
+                    </div>
+
+                    <div class="card-body pt-0">
+                        <div class="progress md-progress">
+                            <div class="progress-bar resolvido" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text">Chamados resolvidos (75%)</p>
+                    </div>
+
                 </div>
-                <!--Grid row-->
             </div>
-        </div>
-        <div class="container my-5 py-5" style="margin-top: -20%">
-            <!-- Section: Block Content -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <!-- Admin card -->
-                        <div class="card mt-3">
-
-                            <div class="">
-                                <i class="far fa-money-bill-alt fa-lg primary-color p-4 ml-3 mt-n3 rounded text-white"></i>
-                                <div class="float-right text-right p-3">
-                                    <p class="text-uppercase text-muted mb-1"><small>sales</small></p>
-                                    <h4 class="font-weight-bold mb-0">23 000$</h4>
-                                </div>
-                            </div>
-
-                            <div class="card-body pt-0">
-                                <div class="progress md-progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                                <p class="card-text">Better than last week (75%)</p>
-                            </div>
-
-                        </div>
-                        <!-- Admin card -->
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <!-- Admin card -->
-                        <div class="card mt-3">
-                            <div class="">
-                                <i class="fas fa-chart-line fa-lg teal z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
-                                <div class="float-right text-right p-3">
-                                    <p class="text-uppercase text-muted mb-1"><small>subscriptions</small></p>
-                                    <h4 class="font-weight-bold mb-0">3534</h4>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0">
-                                <div class="progress md-progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                                <p class="card-text">Worse than last week (46%)</p>
-                            </div>
-                        </div>
-                        <!-- Admin card -->
-                    </div>
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <!-- Admin card -->
-                        <div class="card mt-3">
-                            <div class="">
-                                <i class="fas fa-chart-pie fa-lg purple z-depth-2 p-4 ml-3 mt-n3 rounded text-white"></i>
-                                <div class="float-right text-right p-3">
-                                    <p class="text-uppercase text-muted mb-1"><small>traffic</small></p>
-                                    <h4 class="font-weight-bold mb-0">656 234</h4>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0">
-                                <div class="progress md-progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                                <p class="card-text">Better than last week (31%)</p>
-                            </div>
-                        </div>
-                        <!-- Admin card -->
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!--Section: Content-->
-        </div>
     </section>
-    <!--Section: Block Content-->
 </div>
+
 
 <script type="text/javascript" src="js/chart.js"></script>
 

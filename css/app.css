@@ -9,3 +9,28 @@ div.dhxlayout_base_material div.dhx_cell_layout div.dhx_cell_hdr{
     background-color: #212a2f;
     color: white;
 }
+
+.cor-padrao{
+    background-color: #212a2f !important;
+}
+
+.aberto{
+    background-color: #13384B !important;
+}
+
+.andamento{
+    background-color: #434573 !important;
+}
+
+
+.pendente{
+    background-color: #F3680A !important;
+}
+
+.resolvido{
+    background-color: #28BB3C !important;
+}
+
+.resolvido{
+    background-color: #28BB3C !important;
+}
