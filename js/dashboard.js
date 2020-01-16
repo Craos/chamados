@@ -99,13 +99,22 @@ function dashboard() {
                 console.debug(barra.getElementById('porcentagem'));
                 ifr.contentWindow.document.getElementById('data_container').appendChild(barra);
 
+
+
             });
-            documento.getElementById('chamados').innerHTML = data.chamados;
+
 
 
             $.get( "http://192.168.2.220/ck/dashboard_chamados_max", function( data ) {
 
                 documento.getElementById('icone').innerText = data[0].img;
+
+
+            });
+
+            $.get( "http://192.168.2.220/ck/dashboard_chamados", function( data ) {
+
+                documento.getElementById('chamadosfila').innerHTML = data[0].chamados;
 
             });
 

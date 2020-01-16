@@ -47171,6 +47171,7 @@ sequence|table|25729|25731|1
     </object-type>
     <table id="4050" parent="22" name="chamados">
       <ObjectId>17724</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>9720421</StateNumber>
     </table>
@@ -47203,12 +47204,14 @@ sequence|table|25729|25731|1
     </table>
     <view id="4056" parent="22" name="dashboard_chamados">
       <ObjectId>29428</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>9720421</StateNumber>
       <SourceTextLength>214</SourceTextLength>
     </view>
     <view id="4057" parent="22" name="dashboard_chamados_max">
       <ObjectId>29997</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>9762928</StateNumber>
       <SourceTextLength>397</SourceTextLength>
