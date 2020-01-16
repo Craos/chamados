@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c1445b-d242-4554-91a9-ecae4c5b5875" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/chart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/only-screen.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" afterDir="false" />
@@ -181,7 +179,7 @@
       <workItem from="1578591538611" duration="22432000" />
       <workItem from="1578683857682" duration="21936000" />
       <workItem from="1578933947592" duration="36597000" />
-      <workItem from="1579109751028" duration="12429000" />
+      <workItem from="1579109751028" duration="12790000" />
     </task>
     <task id="LOCAL-00001" summary="novos arquivos e configurações">
       <created>1578591115805</created>
@@ -302,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579121859144</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ajustes no ticket panel para controle de chamados abertos.">
+      <created>1579183055267</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1579183055267</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +331,8 @@
     <MESSAGE value="ultimas atualizações do dia" />
     <MESSAGE value="primeiras atualizações no dia&#10;- ticket panel (acompanhamento de chamados)" />
     <MESSAGE value="algumas novas funcoes" />
-    <option name="LAST_COMMIT_MESSAGE" value="algumas novas funcoes" />
+    <MESSAGE value="ajustes no ticket panel para controle de chamados abertos." />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes no ticket panel para controle de chamados abertos." />
   </component>
   <component name="WindowStateProjectService">
     <state x="243" y="-856" key="#Deployment" timestamp="1579113675521">
@@ -345,9 +351,10 @@
     <state x="272" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579004447907" />
     <state x="272" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933685032" />
     <state x="272" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578684014141" />
-    <state x="289" y="-930" key="CommitChangelistDialog2" timestamp="1579121858132">
-      <screen x="-309" y="-1040" width="1920" height="1040" />
+    <state x="319" y="-930" key="CommitChangelistDialog2" timestamp="1579183054141">
+      <screen x="-279" y="-1040" width="1920" height="1040" />
     </state>
+    <state x="319" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579183054141" />
     <state x="318" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034832436" />
     <state x="289" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121858132" />
     <state x="318" y="-939" key="CommitChangelistDialog2/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933436114" />
@@ -399,9 +406,10 @@
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933376118" />
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578673390330" />
-    <state x="243" y="-793" key="Vcs.Push.Dialog.v2" timestamp="1579121864112">
-      <screen x="-309" y="-1040" width="1920" height="1040" />
+    <state x="273" y="-793" key="Vcs.Push.Dialog.v2" timestamp="1579183066671">
+      <screen x="-279" y="-1040" width="1920" height="1040" />
     </state>
+    <state x="273" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579183066671" />
     <state x="272" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034838715" />
     <state x="243" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121864112" />
     <state x="272" y="-801" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933441762" />
