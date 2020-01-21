@@ -4,8 +4,7 @@ var Form_Registros = [
 
     {type:"input", name:"data_inicio", label:"Data Inicial: ", value: window.dhx.date2str(new Date(), '%d/%m/%Y')},
     {type:"input", name:"hora_inicio", label:"Horario Inicial: ", value: window.dhx.date2str(new Date(), '%H:%i:%s')},
-    {type: "combo", name: "cliente", label: "Cliente: ", required:true, note: {text: 'Selecionar um cliente é obrigatório.'}},
-    {type: "combo", name:"equipamento", label:"Equipamento: ", required:true, note: {text: 'Selecionar um equipamento é obrigatório.'}},
+    {type: "combo", name:"equipamento", label:"Equipamento: ", note: {text: 'Selecionar um equipamento é obrigatório.'}},
 
     {
         type: "input",

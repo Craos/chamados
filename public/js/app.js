@@ -39,26 +39,26 @@ let app = function() {
                 icon:       "../img/registro.png",
                 selected:   false
             },
-            {
-                id:         "sep1",
-                type:       "separator"
-            },
-            {
-                id:         "fila",
-                text:       " Fila Geral de Chamados",
-                icon:       "../img/fila.png",
-                selected:   false
-            },
-            {
-                id:         "sep1",
-                type:       "separator"
-            },
-            {
-                id:         "configuracoes",
-                text:       " Configurações",
-                icon:       "../img/configuracoes.png",
-                selected:   false
-            },
+            // {
+            //     id:         "sep1",
+            //     type:       "separator"
+            // },
+            // {
+            //     id:         "fila",
+            //     text:       " Fila Geral de Chamados",
+            //     icon:       "../img/fila.png",
+            //     selected:   false
+            // },
+            // {
+            //     id:         "sep1",
+            //     type:       "separator"
+            // },
+            // {
+            //     id:         "configuracoes",
+            //     text:       " Configurações",
+            //     icon:       "../img/configuracoes.png",
+            //     selected:   false
+            // },
         ]
     });
 

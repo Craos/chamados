@@ -1,6 +1,8 @@
 function registros() {
 
     let that = this;
+    let user = JSON.parse(sessionStorage.user);
+
 
     let layout = mySidebar.cells('registros').attachLayout({
         pattern:    "2E",
@@ -46,6 +48,13 @@ function registros() {
             if (id === 'enviar') {
                 let dados = formulario.getFormData();
                 dados.situacao = 'Em aberto';
+
+                console.log(user);
+
+                dados.condominio = user.userinfo.condominio;
+
+
+
                 Enviar(dados, atualizargrid);
 
                 dhtmlx.message.position="top";
@@ -127,7 +136,7 @@ function registros() {
 
     let registros = layout.cells('b').attachGrid();
 
-    registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Cliente, Situação, Data de Retorno, Horario de Retorno");
+    registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Situação, Data de Retorno, Horario de Retorno");
     registros.setInitWidths("100,100,150,400,150,100,100");
     registros.setColAlign("left,left,left,left");
     registros.setColSorting("int,str,str,int");
@@ -136,7 +145,8 @@ function registros() {
     function atualizargrid() {
 
         registros.clearAll();
-        $.get( "http://api/ck/uptime", function( data ) {
+
+        $.get( "http://api/ck/uptime?condominio=eq." + user.userinfo.condominio, function( data ) {
             data.filter(function (item) {
 
 

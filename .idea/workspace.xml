@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c1445b-d242-4554-91a9-ecae4c5b5875" name="Default Changelist" comment="ajustes no ticket panel para controle de chamados abertos.">
-      <change afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chamados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chamados.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/chart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ajuda.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/ajuda.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/chamado.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/chamado.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/configuracoes.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/configuracoes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/dashboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/dashboard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/excluir.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/excluir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fila.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/fila.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/novo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/novo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/registro.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/registro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/retorno.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/retorno.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/salvar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/salvar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chamados.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/chamados.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/clientes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/clientes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/equipamentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/equipamentos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/forms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/registros.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/registros.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/situacao.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/situacao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/registros.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/registros.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" afterDir="false" />
@@ -180,6 +158,11 @@
                 <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@2f29e92a" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7cf352c" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -203,7 +186,7 @@
       <workItem from="1578683857682" duration="21936000" />
       <workItem from="1578933947592" duration="36597000" />
       <workItem from="1579109751028" duration="16094000" />
-      <workItem from="1579616523199" duration="11342000" />
+      <workItem from="1579616523199" duration="13960000" />
     </task>
     <task id="LOCAL-00001" summary="novos arquivos e configurações">
       <created>1578591115805</created>
@@ -352,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579625537390</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="novas alterações e migração para o firebase">
+      <created>1579629649140</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1579629649140</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +369,8 @@
     <MESSAGE value="ajustes no ticket panel para controle de chamados abertos." />
     <MESSAGE value="primeiras alterações" />
     <MESSAGE value="adicionado listar equipamentos e nova tabela de equipamentos no banco de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionado listar equipamentos e nova tabela de equipamentos no banco de dados" />
+    <MESSAGE value="novas alterações e migração para o firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="novas alterações e migração para o firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="243" y="-856" key="#Deployment" timestamp="1579113675521">
@@ -391,20 +382,22 @@
       <screen x="-280" y="-1080" width="1920" height="1050" />
     </state>
     <state x="272" y="-894" key="#Notifications/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578683809170" />
-    <state x="272" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579004447907">
-      <screen x="-280" y="-1040" width="1920" height="1040" />
+    <state x="273" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579631728461">
+      <screen x="-279" y="-1050" width="1920" height="1050" />
     </state>
     <state x="162" y="-903" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-280.-1040.1536.824@-280.-1040.1536.824" timestamp="1578935214626" />
     <state x="272" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579004447907" />
+    <state x="273" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579631728461" />
     <state x="272" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933685032" />
     <state x="272" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578684014141" />
-    <state x="412" y="0" key="CommitChangelistDialog2" timestamp="1579625536509">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="300" y="-1050" key="CommitChangelistDialog2" timestamp="1579629648244">
+      <screen x="-279" y="-1050" width="1920" height="1050" />
     </state>
     <state x="319" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619336905" />
     <state x="425" y="0" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579193268104" />
     <state x="318" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034832436" />
     <state x="289" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121858132" />
+    <state x="300" y="-1050" key="CommitChangelistDialog2/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579629648244" />
     <state x="412" y="0" key="CommitChangelistDialog2/0.0.1366.738/-279.-1050.1920.1050@0.0.1366.738" timestamp="1579625536509" />
     <state x="318" y="-939" key="CommitChangelistDialog2/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933436114" />
     <state x="318" y="-969" key="CommitChangelistDialog2/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578694886302" />
@@ -465,12 +458,13 @@
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933376118" />
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578673390330" />
-    <state x="393" y="175" key="Vcs.Push.Dialog.v2" timestamp="1579625544174">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="273" y="-801" key="Vcs.Push.Dialog.v2" timestamp="1579629655706">
+      <screen x="-279" y="-1050" width="1920" height="1050" />
     </state>
     <state x="273" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619347423" />
     <state x="272" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034838715" />
     <state x="243" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121864112" />
+    <state x="273" y="-801" key="Vcs.Push.Dialog.v2/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579629655706" />
     <state x="393" y="175" key="Vcs.Push.Dialog.v2/0.0.1366.738/-279.-1050.1920.1050@0.0.1366.738" timestamp="1579625544174" />
     <state x="272" y="-801" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933441762" />
     <state x="272" y="-831" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578694891705" />
@@ -479,10 +473,11 @@
       <screen x="-280" y="-1050" width="1920" height="1050" />
     </state>
     <state x="544" y="-618" key="WebDeployment.AddServerDialog.v.1/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578586027222" />
-    <state x="576" y="-646" width="319" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578589567370">
-      <screen x="-280" y="-1040" width="1920" height="1040" />
+    <state x="577" y="-652" width="319" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1579631412327">
+      <screen x="-279" y="-1050" width="1920" height="1050" />
     </state>
     <state x="576" y="-646" width="319" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578589567370" />
+    <state x="577" y="-652" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579631412327" />
     <state x="410" y="-713" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1578946729912">
       <screen x="-280" y="-1040" width="1920" height="1040" />
     </state>
@@ -491,12 +486,13 @@
       <screen x="-280" y="-1040" width="1920" height="1040" />
     </state>
     <state x="481" y="-688" width="398" height="331" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579017083696" />
-    <state x="455" y="-782" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1579619840613">
-      <screen x="-279" y="-1040" width="1920" height="1040" />
+    <state x="455" y="-790" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1579631404073">
+      <screen x="-279" y="-1050" width="1920" height="1050" />
     </state>
     <state x="455" y="-782" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619840613" />
     <state x="396" y="-878" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578589338146" />
     <state x="396" y="-918" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578591989489" />
+    <state x="455" y="-790" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579631404073" />
     <state x="396" y="-916" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578680364913" />
     <state x="-217" y="-948" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579117052804">
       <screen x="-309" y="-1040" width="1920" height="1040" />
