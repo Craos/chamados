@@ -1,4 +1,5 @@
 function dashboard() {
+
     let layoutdashboard = mySidebar.cells('dashboard').attachLayout({
         pattern:    "3L",
         offsets: {
@@ -7,6 +8,7 @@ function dashboard() {
             bottom: 5,
             left:   10
         },
+
         cells: [
             {
                 id: "a",
@@ -30,9 +32,6 @@ function dashboard() {
             },
         ]
     });
-
-
-
 
     let gridchamados = layoutdashboard.cells('b').attachGrid();
 
@@ -76,14 +75,12 @@ function dashboard() {
     }
 
     atualizargrid_registros();
-
     atualizargrid_chamados();
 
     layoutdashboard.attachEvent('onContentLoaded', function (id) {
 
         let ifr = layoutdashboard.cells(id).getFrame();
         let documento = ifr.contentWindow.document;
-
 
         $.get( "http://192.168.2.220/ck/dashboard_chamados_resumo", function( data ) {
 
@@ -92,6 +89,7 @@ function dashboard() {
             data.filter(function (item) {
 
                 let barra = tpl.content.cloneNode(true);
+
                 barra.getElementById('porcentagem').style.width = item.percent;
                 barra.getElementById('porcentagem').style.backgroundColor = item.cor;
                 barra.getElementById('descricao').innerText = item.situacao + ' ' + item.percent;
@@ -99,16 +97,11 @@ function dashboard() {
                 console.debug(barra.getElementById('porcentagem'));
                 ifr.contentWindow.document.getElementById('data_container').appendChild(barra);
 
-
-
             });
-
-
 
             $.get( "http://192.168.2.220/ck/dashboard_chamados_max", function( data ) {
 
                 documento.getElementById('icone').innerText = data[0].img;
-
 
             });
 
@@ -117,16 +110,9 @@ function dashboard() {
                 documento.getElementById('chamadosfila').innerHTML = data[0].chamados;
 
             });
-
-
         });
     });
 
     let dashboardscreen = layoutdashboard.cells('a').attachURL("chart.html", null, {fname: "Mike", hobby: "fishing"});
-
-
-
-
-
 
 }
