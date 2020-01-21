@@ -49,6 +49,8 @@ function registros() {
                 let dados = formulario.getFormData();
                 dados.situacao = 'Em aberto';
 
+                let user = JSON.parse(sessionStorage.user);
+
                 console.log(user);
 
                 dados.condominio = user.userinfo.condominio;
@@ -107,18 +109,6 @@ function registros() {
 
     formulario.loadStruct(Form_Registros, function () {
 
-        let comboclientes = formulario.getCombo('cliente');
-
-        listarclientes(function (response) {
-
-            let itens = [];
-            response.filter(function (item) {
-                itens.push({value: item.id, text: item.nome});
-            });
-            comboclientes.addOption(itens);
-
-        });
-
         let comboequipamentos = formulario.getCombo('equipamento');
 
         listarequipamentos(function (response) {
@@ -128,16 +118,16 @@ function registros() {
                 itens.push({value: item.id, text: item.nome});
 
             });
+
             comboequipamentos.addOption(itens);
         });
-
     });
 
 
     let registros = layout.cells('b').attachGrid();
 
     registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Situação, Data de Retorno, Horario de Retorno");
-    registros.setInitWidths("100,100,150,600,100,100");
+    registros.setInitWidths("100,100,150,400,150,100,100");
     registros.setColAlign("left,left,left,left");
     registros.setColSorting("int,str,str,int");
     registros.init();
@@ -146,7 +136,9 @@ function registros() {
 
         registros.clearAll();
 
-        $.get( "http://api/ck/uptime?condominio=eq." + user.userinfo.condominio, function( data ) {
+        let user =
+
+        $.get( "http://api/ck/uptime?condominio=eq.", function( data ) {
             data.filter(function (item) {
 
 
@@ -154,7 +146,7 @@ function registros() {
                 let data_final = (item.data_final !== null) ? window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y') : null;
                 let hora_final = (item.hora_final !== null) ? window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s') : null;
 
-                registros.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.descricao, item.situacao, data_final, hora_final, item.situacao]);
+                registros.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.descricao, item.cliente,  item.situacao, data_final, hora_final, item.situacao]);
             });
         });
 

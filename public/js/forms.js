@@ -37,7 +37,7 @@ var Form_Chamados = [
 
     {type: "newcolumn", offset: 20},
 
-    {type:"input", name:"solicitante", label:"Solicitante: ", required: true}},
+    {type:"input", name:"solicitante", label:"Solicitante: ", required: true},
 
 
 ];

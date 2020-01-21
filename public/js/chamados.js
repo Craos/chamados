@@ -60,7 +60,7 @@ function chamados() {
             } else if(id === 'excluir'){
                 $.ajax({
                     type: "DELETE",
-                    url: config.endpoint + '/ck/chamados?id=eq.' + chamadoslayout.getSelectedRowId(),
+                    url: 'http://192.168.2.220/ck/chamados?id=eq.' + chamadoslayout.getSelectedRowId(),
                     dataType: "json",
                     headers: {
                         Prefer: "return=representation",
@@ -109,7 +109,7 @@ function chamados() {
 
         chamadoslayout.clearAll();
 
-        $.get( config.endpoint + "/ck/chamados", function( data ) {
+        $.get( "http://192.168.2.220/ck/chamados", function( data ) {
             data.filter(function (item) {
 
                 let filedate = window.dhx.date2str(new Date(item.filedate), '%d/%m/%Y - %H:%i');
@@ -122,7 +122,7 @@ function chamados() {
         let enviarchamado = function(data, callback) {
         $.ajax({
             type: "POST",
-            url: config.endpoint + '/ck/chamados',
+            url: 'http://192.168.2.220/ck/chamados',
             dataType: "json",
             headers: {
                 Prefer: "return=representation",
