@@ -13,5 +13,6 @@
     <orderEntry type="module" module-name="craos-material" />
     <orderEntry type="library" name="mdb" level="application" />
     <orderEntry type="library" name="popper" level="application" />
+    <orderEntry type="library" name="oauth" level="application" />
   </component>
 </module>

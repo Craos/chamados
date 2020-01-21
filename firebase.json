@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "chamados",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

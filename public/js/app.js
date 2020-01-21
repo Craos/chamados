@@ -1,6 +1,6 @@
 var mySidebar, situacoes;
 
-$(document).ready(function () {
+let app = function() {
 
      mySidebar = new dhtmlXSideBar({
 
@@ -81,4 +81,4 @@ $(document).ready(function () {
 
     dashboard();
 
-});
+};

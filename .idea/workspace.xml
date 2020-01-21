@@ -2,18 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c1445b-d242-4554-91a9-ecae4c5b5875" name="Default Changelist" comment="ajustes no ticket panel para controle de chamados abertos.">
-      <change afterPath="$PROJECT_DIR$/js/equipamentos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/chamados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chamados.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chamados.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/chamados.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/forms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/registros.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/registros.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ajuda.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/ajuda.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/chamado.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/chamado.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/configuracoes.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/configuracoes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dashboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/dashboard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/excluir.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/excluir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fila.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/fila.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/novo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/novo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/registro.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/registro.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/retorno.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/retorno.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/salvar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/salvar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/chamados.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/chamados.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/clientes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/clientes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/equipamentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/equipamentos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/registros.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/registros.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/situacao.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/situacao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../verticals-portal/css/mdb.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/css/mdb.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +158,9 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wapp\apache2\htdocs\chamados\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Bitnami\wapp\apache2\htdocs\chamados" />
     </key>
@@ -152,11 +179,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@2f29e92a" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@d4ca199" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -181,7 +203,7 @@
       <workItem from="1578683857682" duration="21936000" />
       <workItem from="1578933947592" duration="36597000" />
       <workItem from="1579109751028" duration="16094000" />
-      <workItem from="1579616523199" duration="7405000" />
+      <workItem from="1579616523199" duration="11342000" />
     </task>
     <task id="LOCAL-00001" summary="novos arquivos e configurações">
       <created>1578591115805</created>
@@ -323,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579619338764</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="adicionado listar equipamentos e nova tabela de equipamentos no banco de dados">
+      <created>1579625537390</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1579625537390</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +378,8 @@
     <MESSAGE value="algumas novas funcoes" />
     <MESSAGE value="ajustes no ticket panel para controle de chamados abertos." />
     <MESSAGE value="primeiras alterações" />
-    <option name="LAST_COMMIT_MESSAGE" value="primeiras alterações" />
+    <MESSAGE value="adicionado listar equipamentos e nova tabela de equipamentos no banco de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionado listar equipamentos e nova tabela de equipamentos no banco de dados" />
   </component>
   <component name="WindowStateProjectService">
     <state x="243" y="-856" key="#Deployment" timestamp="1579113675521">
@@ -368,13 +398,14 @@
     <state x="272" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579004447907" />
     <state x="272" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933685032" />
     <state x="272" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578684014141" />
-    <state x="319" y="-930" key="CommitChangelistDialog2" timestamp="1579619336905">
-      <screen x="-279" y="-1040" width="1920" height="1040" />
+    <state x="412" y="0" key="CommitChangelistDialog2" timestamp="1579625536509">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="319" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619336905" />
     <state x="425" y="0" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579193268104" />
     <state x="318" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034832436" />
     <state x="289" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121858132" />
+    <state x="412" y="0" key="CommitChangelistDialog2/0.0.1366.738/-279.-1050.1920.1050@0.0.1366.738" timestamp="1579625536509" />
     <state x="318" y="-939" key="CommitChangelistDialog2/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933436114" />
     <state x="318" y="-969" key="CommitChangelistDialog2/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578694886302" />
     <state x="407" y="0" key="CommitChangelistDialog2/0.0.1366.738/-280.-1080.1920.1050@0.0.1366.738" timestamp="1578685401648" />
@@ -434,12 +465,13 @@
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933376118" />
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578673390330" />
-    <state x="273" y="-793" key="Vcs.Push.Dialog.v2" timestamp="1579619347423">
-      <screen x="-279" y="-1040" width="1920" height="1040" />
+    <state x="393" y="175" key="Vcs.Push.Dialog.v2" timestamp="1579625544174">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="273" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619347423" />
     <state x="272" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034838715" />
     <state x="243" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121864112" />
+    <state x="393" y="175" key="Vcs.Push.Dialog.v2/0.0.1366.738/-279.-1050.1920.1050@0.0.1366.738" timestamp="1579625544174" />
     <state x="272" y="-801" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933441762" />
     <state x="272" y="-831" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578694891705" />
     <state x="393" y="175" key="Vcs.Push.Dialog.v2/0.0.1366.738/-280.-1080.1920.1050@0.0.1366.738" timestamp="1578685410212" />
@@ -482,6 +514,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="1367" height="816" maximized="true" key="dock-window-1/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579112480382" />
+    <state x="388" y="-884" width="586" height="717" key="find.popup" timestamp="1579628112015">
+      <screen x="-279" y="-1050" width="1920" height="1050" />
+    </state>
+    <state x="388" y="-884" width="586" height="717" key="find.popup/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579628112015" />
     <state x="193" y="-1407" width="945" height="968" key="run.anything.popup" timestamp="1579616780356">
       <screen x="-279" y="-1040" width="1920" height="1040" />
     </state>
@@ -498,7 +534,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/registros.js</url>
+          <url>file://$PROJECT_DIR$/public/js/registros.js</url>
           <line>133</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

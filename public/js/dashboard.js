@@ -41,7 +41,7 @@ function dashboard() {
 
     function atualizargrid_chamados() {
 
-        $.get( "http://192.168.2.220/ck/dashboard_chamados", function( data ) {
+        $.get( config.endpoint + "/ck/dashboard_chamados", function( data ) {
             data.filter(function (item) {
 
                 let filedate = window.dhx.date2str(new Date(item.filedate), '%d/%m - %H:%i');
@@ -61,7 +61,7 @@ function dashboard() {
 
     function atualizargrid_registros() {
 
-        $.get( "http://192.168.2.220/ck/uptime", function( data ) {
+        $.get( config.endpoint + "/ck/uptime", function( data ) {
             data.filter(function (item) {
 
                 let data_inicio = window.dhx.date2str(new Date(item.data_inicio), '%d/%m/%Y');
@@ -82,7 +82,7 @@ function dashboard() {
         let ifr = layoutdashboard.cells(id).getFrame();
         let documento = ifr.contentWindow.document;
 
-        $.get( "http://192.168.2.220/ck/dashboard_chamados_resumo", function( data ) {
+        $.get( config.endpoint + "/ck/dashboard_chamados_resumo", function( data ) {
 
             let tpl = documento.getElementById('barras');
 
@@ -99,13 +99,13 @@ function dashboard() {
 
             });
 
-            $.get( "http://192.168.2.220/ck/dashboard_chamados_max", function( data ) {
+            $.get( config.endpoint + "/ck/dashboard_chamados_max", function( data ) {
 
                 documento.getElementById('icone').innerText = data[0].img;
 
             });
 
-            $.get( "http://192.168.2.220/ck/dashboard_chamados", function( data ) {
+            $.get( config.endpoint + "/ck/dashboard_chamados", function( data ) {
 
                 documento.getElementById('chamadosfila').innerHTML = data[0].chamados;
 
