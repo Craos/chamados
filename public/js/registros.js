@@ -137,7 +137,7 @@ function registros() {
     let registros = layout.cells('b').attachGrid();
 
     registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Situação, Data de Retorno, Horario de Retorno");
-    registros.setInitWidths("100,100,150,400,150,100,100");
+    registros.setInitWidths("100,100,150,600,100,100");
     registros.setColAlign("left,left,left,left");
     registros.setColSorting("int,str,str,int");
     registros.init();
@@ -154,7 +154,7 @@ function registros() {
                 let data_final = (item.data_final !== null) ? window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y') : null;
                 let hora_final = (item.hora_final !== null) ? window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s') : null;
 
-                registros.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.descricao, item.cliente,  item.situacao, data_final, hora_final, item.situacao]);
+                registros.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.descricao, item.situacao, data_final, hora_final, item.situacao]);
             });
         });
 

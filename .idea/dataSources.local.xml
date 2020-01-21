@@ -11,12 +11,13 @@
       <schema-mapping>
         <introspection-scope>
           <node negative="1">
-            <node kind="database" qname="ctrl">
+            <node kind="database">
+              <name qname="ctrl" />
+              <name qname="oauth" />
               <node kind="schema" negative="1" />
             </node>
             <node kind="database">
               <name qname="interact" />
-              <name qname="oauth" />
               <name qname="own" />
               <name qname="postgres" />
               <name qname="smt" />

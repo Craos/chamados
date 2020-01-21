@@ -1,22 +1,26 @@
-[debug] [2020-01-21T17:57:18.789Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T17:57:18.792Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
-[debug] [2020-01-21T17:57:18.792Z] CLI Version:   7.9.0
-[debug] [2020-01-21T17:57:18.792Z] Platform:      win32
-[debug] [2020-01-21T17:57:18.792Z] Node Version:  v12.13.1
-[debug] [2020-01-21T17:57:18.792Z] Time:          Tue Jan 21 2020 14:57:18 GMT-0300 (GMT-03:00)
-[debug] [2020-01-21T17:57:18.792Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T17:57:18.792Z] 
-[debug] [2020-01-21T17:57:18.803Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-21T17:57:18.804Z] > authorizing via signed-in user
-[debug] [2020-01-21T17:57:18.804Z] [iam] checking project verticals-47425 for permissions ["firebase.projects.get"]
-[debug] [2020-01-21T17:57:18.806Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/verticals-47425:testIamPermissions  
+[debug] [2020-01-21T19:59:56.315Z] ----------------------------------------------------------------------
+[debug] [2020-01-21T19:59:56.317Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2020-01-21T19:59:56.317Z] CLI Version:   7.9.0
+[debug] [2020-01-21T19:59:56.317Z] Platform:      win32
+[debug] [2020-01-21T19:59:56.317Z] Node Version:  v12.13.1
+[debug] [2020-01-21T19:59:56.318Z] Time:          Tue Jan 21 2020 16:59:56 GMT-0300 (GMT-03:00)
+[debug] [2020-01-21T19:59:56.318Z] ----------------------------------------------------------------------
+[debug] [2020-01-21T19:59:56.318Z] 
+[debug] [2020-01-21T19:59:56.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-21T19:59:56.329Z] > authorizing via signed-in user
+[debug] [2020-01-21T19:59:56.329Z] [iam] checking project verticals-47425 for permissions ["firebase.projects.get"]
+[debug] [2020-01-21T19:59:56.331Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-21T19:59:56.331Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-21T19:59:56.531Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T19:59:56.540Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/verticals-47425:testIamPermissions  
 
-[debug] [2020-01-21T17:57:19.853Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T17:57:19.861Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
+[debug] [2020-01-21T19:59:57.534Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T19:59:57.538Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
  
-[debug] [2020-01-21T17:57:20.320Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T17:57:20.323Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425/webApps/-/config  
+[debug] [2020-01-21T19:59:58.803Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T19:59:58.806Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425/webApps/-/config  
  
-[debug] [2020-01-21T17:57:21.585Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T20:00:00.161Z] <<< HTTP RESPONSE 200
 [info] i  hosting[chamados]: Serving hosting files from: public
 [info] +  hosting[chamados]: Local server: http://localhost:5000

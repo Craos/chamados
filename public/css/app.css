@@ -5,6 +5,11 @@ html, body {
     padding: 0;
 }
 
+.dhxsidebar_base_material div.dhxsidebar_cont{
+    left: 0;
+    top: 0;
+}
+
 div.dhxlayout_base_material div.dhx_cell_layout div.dhx_cell_hdr{
     background-color: #212a2f;
     color: white;
@@ -14,23 +19,52 @@ div.dhxlayout_base_material div.dhx_cell_layout div.dhx_cell_hdr{
     background-color: #212a2f !important;
 }
 
-.aberto{
-    background-color: #13384B !important;
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side {
+    background-color: #212a2f;
+    z-index: 9999;
 }
 
-.andamento{
-    background-color: #434573 !important;
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side div.dhxsidebar_side_items div.dhxsidebar_item.dhxsidebar_item_selected{
+    background-color: #212a2f;
+    color: white;
 }
 
-
-.pendente{
-    background-color: #F3680A !important;
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side div.dhxsidebar_side_items div.dhxsidebar_item{
+    background-color: #212a2f;
 }
 
-.resolvido{
-    background-color: #28BB3C !important;
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side div.dhxsidebar_side_items div.dhxsidebar_sep{
+    background-color: transparent;
 }
 
-.resolvido{
-    background-color: #28BB3C !important;
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side div.dhxsidebar_side_items div.dhxsidebar_item:hover{
+    background-color: #888888;
+}
+
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side{
+    border: none;
+}
+
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side div.dhxsidebar_side_items div.dhxsidebar_item{
+    color: white;
+}
+.dhxsidebar_tpl_myview div.line_one {
+    margin-left: 51px;
+    margin-top: 4px;
+    line-height: 16px;
+    font-size: 11px;
+}
+.dhxsidebar_tpl_myview div.line_two {
+    margin-left: 51px;
+    margin-top: 1px;
+    line-height: 16px;
+    color: #515151;
+}
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhxsidebar_side.dhxsidebar_tpl_icons_text div.dhxsidebar_side_items div.dhxsidebar_item div.dhxsidebar_item_text{
+    margin-top: 3px;
+}
+
+.dhxsidebar_base_material div.dhxsidebar_cont div.dhx_cell_sidebar div.dhx_cell_sidebar_hdr{
+    background-color: white;
+    border: none;
 }

@@ -5,17 +5,23 @@ let app = function() {
      mySidebar = new dhtmlXSideBar({
 
         parent:         document.body,
-        template:       "icons",
+        template:       "icons_text",
         icons_path:     "icons/",
         single_cell:    false,
         bubble:         6,
-        width:          50,
+        width:          100,
         header:         true,
         autohide:       false,
+         offsets: {          // optional, offsets for fullscreen init
+             top:    0,     // you can specify all four sides
+             right:  0,     // or only the side where you want to have an offset
+             bottom: 0,
+             left:   0
+         },
         items: [
             {
                 id:         "dashboard",
-                text:       " Dashboard",
+                text:       "Dashboard",
                 icon:       "../img/dashboard.png",
                 selected:   true
             },
@@ -25,7 +31,7 @@ let app = function() {
             },
             {
                 id:         "chamados",
-                text:       " Abertura de Chamado",
+                text:       "Chamados",
                 icon:       "../img/chamado.png",
                 selected:   false
             },
@@ -35,7 +41,7 @@ let app = function() {
             },
             {
                 id:         "registros",
-                text:       " Registro de Eventos",
+                text:       "Eventos",
                 icon:       "../img/registro.png",
                 selected:   false
             },
