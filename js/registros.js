@@ -29,6 +29,7 @@ function registros() {
     });
 
 
+
     layout.cells('a').attachToolbar({
         iconset: "awesome",
         items:[
@@ -90,7 +91,40 @@ function registros() {
 
     });
 
-    let formulario = layout.cells("a").attachForm(Form_Registros);
+
+
+
+    let formulario = layout.cells("a").attachForm();
+
+    formulario.loadStruct(Form_Registros, function () {
+
+        let comboclientes = formulario.getCombo('cliente');
+
+        listarclientes(function (response) {
+
+            let itens = [];
+            response.filter(function (item) {
+                itens.push({value: item.id, text: item.nome});
+            });
+            comboclientes.addOption(itens);
+
+        });
+
+        let comboequipamentos = formulario.getCombo('equipamento');
+
+        listarequipamentos(function (response) {
+
+            let itens = [];
+            response.filter(function (item) {
+                itens.push({value: item.id, text: item.nome});
+
+            });
+            comboequipamentos.addOption(itens);
+        });
+
+    });
+
+
     let registros = layout.cells('b').attachGrid();
 
     registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Cliente, Situação, Data de Retorno, Horario de Retorno");

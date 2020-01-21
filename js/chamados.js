@@ -94,6 +94,8 @@ function chamados() {
 
         });
     });
+
+
     let chamadoslayout = layoutchamados.cells('b').attachGrid();
 
     chamadoslayout.setHeader("Chamado, Data, Assunto, Solicitação, Solicitante");
