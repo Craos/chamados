@@ -136,7 +136,11 @@ function registros() {
 
         registros.clearAll();
 
-        let user =
+        let user = JSON.parse(sessionStorage.user);
+
+        console.log(user);
+
+        dados.condominio = user.userinfo.condominio;
 
         $.get( "http://api/ck/uptime?condominio=eq.", function( data ) {
             data.filter(function (item) {
