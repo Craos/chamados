@@ -30,8 +30,6 @@ function registros() {
         ]
     });
 
-
-
     layout.cells('a').attachToolbar({
         iconset: "awesome",
         items:[
@@ -54,8 +52,6 @@ function registros() {
                 console.log(user);
 
                 dados.condominio = user.userinfo.condominio;
-
-
 
                 Enviar(dados, atualizargrid);
 
@@ -101,10 +97,7 @@ function registros() {
         }
 
     });
-
-
-
-
+    
     let formulario = layout.cells("a").attachForm();
 
     formulario.loadStruct(Form_Registros, function () {
@@ -123,7 +116,6 @@ function registros() {
         });
     });
 
-
     let registros = layout.cells('b').attachGrid();
 
     registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Situação, Data de Retorno, Horario de Retorno");
@@ -136,15 +128,10 @@ function registros() {
 
         registros.clearAll();
 
-        let user = JSON.parse(sessionStorage.user);
-
         console.log(user);
 
-        dados.condominio = user.userinfo.condominio;
-
-        $.get( "http://api/ck/uptime?condominio=eq.", function( data ) {
+        $.get( "http://api/ck/uptime?condominio=eq." + user.userinfo.condominio, function( data ) {
             data.filter(function (item) {
-
 
                 let data_inicio = window.dhx.date2str(new Date(item.data_inicio), '%d/%m/%Y');
                 let data_final = (item.data_final !== null) ? window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y') : null;
