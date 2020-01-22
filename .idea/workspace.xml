@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c1445b-d242-4554-91a9-ecae4c5b5875" name="Default Changelist" comment="ajustes no ticket panel para controle de chamados abertos.">
+      <change afterPath="$PROJECT_DIR$/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/chamados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chamados.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/oauth.lw5KBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/oauth.lw5KBg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/equipamentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/equipamentos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/registros.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/registros.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" afterDir="false" />
@@ -95,6 +104,33 @@
         <item name="oauth: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ctrl@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="oauth: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ctrl@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="oauth: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ctrl@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="oauth: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="perfis: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
@@ -102,9 +138,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -137,9 +173,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../verticals-portal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../craos" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -155,7 +191,37 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6a533bb2" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@511d43ae" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@67251433" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4c50b338" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:ctrl@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@63f4718b" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -180,7 +246,7 @@
       <workItem from="1579109751028" duration="16094000" />
       <workItem from="1579616523199" duration="18679000" />
       <workItem from="1579638255588" duration="5775000" />
-      <workItem from="1579698763898" duration="219000" />
+      <workItem from="1579698763898" duration="10109000" />
     </task>
     <task id="LOCAL-00001" summary="novos arquivos e configurações">
       <created>1578591115805</created>
@@ -357,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579642693469</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ajuste ao buscar registros">
+      <created>1579699030939</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579699030939</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +484,8 @@
     <MESSAGE value="alteração no diretório e base de dados" />
     <MESSAGE value="reparo de alguns erros causados na implantação do sistema de upload" />
     <MESSAGE value="salvar condominio na sessão" />
-    <option name="LAST_COMMIT_MESSAGE" value="salvar condominio na sessão" />
+    <MESSAGE value="ajuste ao buscar registros" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste ao buscar registros" />
   </component>
   <component name="WindowStateProjectService">
     <state x="243" y="-856" key="#Deployment" timestamp="1579113675521">
@@ -431,11 +505,15 @@
     <state x="273" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579637137624" />
     <state x="272" y="-875" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1050.1920.1050@-280.-1050.1920.1050" timestamp="1578933685032" />
     <state x="272" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578684014141" />
-    <state x="300" y="-1050" key="CommitChangelistDialog2" timestamp="1579642692468">
-      <screen x="-279" y="-1050" width="1920" height="1050" />
+    <state x="440" y="-678" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1579714767914">
+      <screen x="-279" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="440" y="-678" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1366.728/-279.-1080.1920.1080@-279.-1080.1920.1080" timestamp="1579714767914" />
+    <state x="425" y="0" key="CommitChangelistDialog2" timestamp="1579699029439">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="319" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619336905" />
-    <state x="425" y="0" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579193268104" />
+    <state x="425" y="0" key="CommitChangelistDialog2/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579699029439" />
     <state x="318" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034832436" />
     <state x="289" y="-930" key="CommitChangelistDialog2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121858132" />
     <state x="300" y="-1050" key="CommitChangelistDialog2/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579642692468" />
@@ -448,15 +526,17 @@
     </state>
     <state x="244" y="-838" key="DiffContextDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579028364876" />
     <state x="245" y="-846" width="1092" height="619" key="DiffContextDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579642669413" />
-    <state x="461" y="-761" key="FileChooserDialogImpl" timestamp="1579190151297">
-      <screen x="-279" y="-1040" width="1920" height="1040" />
+    <state x="526" y="195" key="FileChooserDialogImpl" timestamp="1579700848147">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="461" y="-761" key="FileChooserDialogImpl/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579190151297" />
+    <state x="526" y="195" key="FileChooserDialogImpl/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579700848147" />
     <state x="460" y="-761" key="FileChooserDialogImpl/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579024954812" />
     <state x="460" y="-798" key="FileChooserDialogImpl/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578674094598" />
-    <state x="568" y="293" width="347" height="181" key="Github.CreateGistDialog" timestamp="1579625259638">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="519" y="-651" width="347" height="198" key="Github.CreateGistDialog" timestamp="1579711955969">
+      <screen x="-279" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="519" y="-651" width="347" height="198" key="Github.CreateGistDialog/0.0.1366.728/-279.-1080.1920.1080@-279.-1080.1920.1080" timestamp="1579711955969" />
     <state x="518" y="-627" width="347" height="198" key="Github.CreateGistDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579029995854" />
     <state x="568" y="293" width="347" height="181" key="Github.CreateGistDialog/0.0.1366.738/-279.-1050.1920.1050@0.0.1366.738" timestamp="1579625259638" />
     <state width="1293" height="439" key="GridCell.Tab.0.bottom" timestamp="1579637128704">
@@ -508,10 +588,15 @@
       <screen x="-279" y="-1050" width="1920" height="1050" />
     </state>
     <state x="510" y="-812" key="RollbackChangesDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579640687007" />
-    <state x="273" y="-801" key="Vcs.Push.Dialog.v2" timestamp="1579642702575">
-      <screen x="-279" y="-1050" width="1920" height="1050" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1579710012693">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728/-279.-1080.1920.1080@0.0.1366.728" timestamp="1579710012693" />
+    <state x="393" y="173" key="Vcs.Push.Dialog.v2" timestamp="1579699088140">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="273" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619347423" />
+    <state x="393" y="173" key="Vcs.Push.Dialog.v2/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579699088140" />
     <state x="272" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579034838715" />
     <state x="243" y="-793" key="Vcs.Push.Dialog.v2/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579121864112" />
     <state x="273" y="-801" key="Vcs.Push.Dialog.v2/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579642702575" />
@@ -532,14 +617,16 @@
       <screen x="-280" y="-1040" width="1920" height="1040" />
     </state>
     <state x="410" y="-713" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578946729912" />
-    <state x="481" y="-688" width="398" height="331" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1579017083696">
-      <screen x="-280" y="-1040" width="1920" height="1040" />
+    <state x="482" y="-714" width="398" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1579715712340">
+      <screen x="-279" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="482" y="-714" width="398" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728/-279.-1080.1920.1080@-279.-1080.1920.1080" timestamp="1579715712340" />
     <state x="481" y="-688" width="398" height="331" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579017083696" />
-    <state x="455" y="-790" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1579631404073">
-      <screen x="-279" y="-1050" width="1920" height="1050" />
+    <state x="455" y="-813" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1579715824374">
+      <screen x="-279" y="-1080" width="1920" height="1080" />
     </state>
     <state x="455" y="-782" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579619840613" />
+    <state x="455" y="-813" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-279.-1080.1920.1080@-279.-1080.1920.1080" timestamp="1579715824374" />
     <state x="396" y="-878" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1578589338146" />
     <state x="396" y="-918" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578591989489" />
     <state x="455" y="-790" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579631404073" />
@@ -563,9 +650,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="1367" height="816" maximized="true" key="dock-window-1/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579112480382" />
-    <state x="388" y="-884" width="586" height="717" key="find.popup" timestamp="1579628112015">
-      <screen x="-279" y="-1050" width="1920" height="1050" />
+    <state x="475" y="115" width="586" height="498" key="find.popup" timestamp="1579710449553">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="475" y="115" width="586" height="498" key="find.popup/0.0.1366.728/-279.-1080.1920.1080@0.0.1366.728" timestamp="1579710449553" />
     <state x="388" y="-884" width="586" height="717" key="find.popup/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579628112015" />
     <state x="193" y="-1407" width="945" height="968" key="run.anything.popup" timestamp="1579616780356">
       <screen x="-279" y="-1040" width="1920" height="1040" />

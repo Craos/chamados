@@ -1,6 +1,9 @@
 var mySidebar, situacoes;
 
+
 let app = function() {
+
+    listarequipamentos(null);
 
      mySidebar = new dhtmlXSideBar({
 

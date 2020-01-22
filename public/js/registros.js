@@ -104,16 +104,7 @@ function registros() {
 
         let comboequipamentos = formulario.getCombo('equipamento');
 
-        listarequipamentos(function (response) {
-
-            let itens = [];
-            response.filter(function (item) {
-                itens.push({value: item.id, text: item.nome});
-
-            });
-
-            comboequipamentos.addOption(itens);
-        });
+        comboequipamentos.addOption(equipamentosoptions);
     });
 
     let registros = layout.cells('b').attachGrid();
@@ -137,7 +128,16 @@ function registros() {
                 let data_final = (item.data_final !== null) ? window.dhx.date2str(new Date(item.data_final), '%d/%m/%Y') : null;
                 let hora_final = (item.hora_final !== null) ? window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s') : null;
 
-                registros.addRow(item.id, [data_inicio, item.hora_inicio, item.equipamento, item.descricao, item.cliente,  item.situacao, data_final, hora_final, item.situacao]);
+                let exibirequipamento = 'Não definido';
+
+                listaequipamentos.filter(function (i) {
+                    console.debug(i);
+                    if(i.id === item.equipamento){
+                        exibirequipamento = i.nome;
+                    }
+                });
+
+                registros.addRow(item.id, [data_inicio, item.hora_inicio, exibirequipamento, item.descricao, item.cliente,  item.situacao, data_final, hora_final, item.situacao]);
             });
         });
 
