@@ -1,127 +1,48 @@
-[debug] [2020-01-21T19:59:56.315Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T19:59:56.317Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
-[debug] [2020-01-21T19:59:56.317Z] CLI Version:   7.9.0
-[debug] [2020-01-21T19:59:56.317Z] Platform:      win32
-[debug] [2020-01-21T19:59:56.317Z] Node Version:  v12.13.1
-[debug] [2020-01-21T19:59:56.318Z] Time:          Tue Jan 21 2020 16:59:56 GMT-0300 (GMT-03:00)
-[debug] [2020-01-21T19:59:56.318Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T19:59:56.318Z] 
-[debug] [2020-01-21T19:59:56.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-21T19:59:56.329Z] > authorizing via signed-in user
-[debug] [2020-01-21T19:59:56.329Z] [iam] checking project verticals-47425 for permissions ["firebase.projects.get"]
-[debug] [2020-01-21T19:59:56.331Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-01-21T19:59:56.331Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2020-01-23T16:27:05.527Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T16:27:05.529Z] Command:       /usr/bin/node /usr/bin/firebase serve --only hosting
+[debug] [2020-01-23T16:27:05.529Z] CLI Version:   7.12.1
+[debug] [2020-01-23T16:27:05.529Z] Platform:      linux
+[debug] [2020-01-23T16:27:05.529Z] Node Version:  v10.15.3
+[debug] [2020-01-23T16:27:05.529Z] Time:          Thu Jan 23 2020 14:27:05 GMT-0200 (GMT-02:00)
+[debug] [2020-01-23T16:27:05.529Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T16:27:05.529Z] 
+[debug] [2020-01-23T16:27:05.538Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-23T16:27:05.538Z] > authorizing via signed-in user
+[debug] [2020-01-23T16:27:05.538Z] [iam] checking project verticals-47425 for permissions ["firebase.projects.get"]
+[debug] [2020-01-23T16:27:05.540Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/verticals-47425:testIamPermissions  
+
+[debug] [2020-01-23T16:27:06.503Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T16:27:06.504Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
+ 
+[debug] [2020-01-23T16:27:07.666Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T16:27:07.667Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425/webApps/-/config  
+ 
+[debug] [2020-01-23T16:27:08.897Z] <<< HTTP RESPONSE 200
+[info] i  hosting[chamados]: Serving hosting files from: public
+[info] ✔  hosting[chamados]: Local server: http://localhost:5000
+[debug] [2020-01-23T18:17:28.222Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T18:17:28.226Z] Command:       /usr/bin/node /usr/bin/firebase serve --only hosting
+[debug] [2020-01-23T18:17:28.226Z] CLI Version:   7.12.1
+[debug] [2020-01-23T18:17:28.226Z] Platform:      linux
+[debug] [2020-01-23T18:17:28.226Z] Node Version:  v10.15.3
+[debug] [2020-01-23T18:17:28.230Z] Time:          Thu Jan 23 2020 16:17:28 GMT-0200 (GMT-02:00)
+[debug] [2020-01-23T18:17:28.230Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T18:17:28.230Z] 
+[debug] [2020-01-23T18:17:28.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-23T18:17:28.238Z] > authorizing via signed-in user
+[debug] [2020-01-23T18:17:28.238Z] [iam] checking project verticals-47425 for permissions ["firebase.projects.get"]
+[debug] [2020-01-23T18:17:28.239Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-23T18:17:28.240Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2020-01-21T19:59:56.531Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T19:59:56.540Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/verticals-47425:testIamPermissions  
+[debug] [2020-01-23T18:17:28.585Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T18:17:28.589Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/verticals-47425:testIamPermissions  
 
-[debug] [2020-01-21T19:59:57.534Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T19:59:57.538Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
+[debug] [2020-01-23T18:17:29.643Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T18:17:29.645Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
  
-[debug] [2020-01-21T19:59:58.803Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T19:59:58.806Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425/webApps/-/config  
+[debug] [2020-01-23T18:17:30.169Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T18:17:30.172Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425/webApps/-/config  
  
-[debug] [2020-01-21T20:00:00.161Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T18:17:30.634Z] <<< HTTP RESPONSE 200
 [info] i  hosting[chamados]: Serving hosting files from: public
-[info] +  hosting[chamados]: Local server: http://localhost:5000
-[debug] [2020-01-21T20:15:01.964Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T20:15:01.966Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-01-21T20:15:01.966Z] CLI Version:   7.9.0
-[debug] [2020-01-21T20:15:01.966Z] Platform:      win32
-[debug] [2020-01-21T20:15:01.967Z] Node Version:  v12.13.1
-[debug] [2020-01-21T20:15:01.967Z] Time:          Tue Jan 21 2020 17:15:01 GMT-0300 (GMT-03:00)
-[debug] [2020-01-21T20:15:01.967Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T20:15:01.967Z] 
-[debug] [2020-01-21T20:15:01.982Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-21T20:15:01.983Z] > authorizing via signed-in user
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  c:\Bitnami\wapp\apache2\htdocs\chamados
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-  * You are initializing in an existing Firebase project directory
-
-[debug] [2020-01-21T20:15:37.990Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T20:15:37.992Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-01-21T20:15:37.992Z] CLI Version:   7.9.0
-[debug] [2020-01-21T20:15:37.992Z] Platform:      win32
-[debug] [2020-01-21T20:15:37.992Z] Node Version:  v12.13.1
-[debug] [2020-01-21T20:15:37.993Z] Time:          Tue Jan 21 2020 17:15:37 GMT-0300 (GMT-03:00)
-[debug] [2020-01-21T20:15:37.993Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T20:15:37.993Z] 
-[debug] [2020-01-21T20:15:38.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-21T20:15:38.002Z] > authorizing via signed-in user
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  c:\Bitnami\wapp\apache2\htdocs\chamados
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-  * You are initializing in an existing Firebase project directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[info] i  .firebaserc already has a default project, using verticals-47425.
-[debug] [2020-01-21T20:15:45.006Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
- 
-[debug] [2020-01-21T20:15:56.122Z] Server Error. getaddrinfo EAI_AGAIN firebase.googleapis.com
-[debug] [2020-01-21T20:16:07.239Z] FirebaseError: Server Error. getaddrinfo EAI_AGAIN firebase.googleapis.com
-    at Request._callback (C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:30:31)
-    at self.callback (C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
-    at Request.emit (events.js:210:5)
-    at Request.EventEmitter.emit (domain.js:475:20)
-    at Request.onRequestError (C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:881:8)
-    at ClientRequest.emit (events.js:215:7)
-    at ClientRequest.EventEmitter.emit (domain.js:475:20)
-    at TLSSocket.socketErrorListener (_http_client.js:406:9)
-    at TLSSocket.emit (events.js:210:5)
-    at TLSSocket.EventEmitter.emit (domain.js:475:20)
-    at emitErrorNT (internal/streams/destroy.js:92:8)
-    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-    at processTicksAndRejections (internal/process/task_queues.js:80:21)
-[error] 
-[error] Error: Failed to get Firebase project verticals-47425. Please make sure the project exists and your account has permission to access it.
-[debug] [2020-01-21T20:22:45.859Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T20:22:45.862Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\borges\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
-[debug] [2020-01-21T20:22:45.862Z] CLI Version:   7.9.0
-[debug] [2020-01-21T20:22:45.862Z] Platform:      win32
-[debug] [2020-01-21T20:22:45.862Z] Node Version:  v12.13.1
-[debug] [2020-01-21T20:22:45.862Z] Time:          Tue Jan 21 2020 17:22:45 GMT-0300 (GMT-03:00)
-[debug] [2020-01-21T20:22:45.862Z] ----------------------------------------------------------------------
-[debug] [2020-01-21T20:22:45.862Z] 
-[debug] [2020-01-21T20:22:45.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-01-21T20:22:45.878Z] > authorizing via signed-in user
-[debug] [2020-01-21T20:22:45.878Z] [iam] checking project verticals-47425 for permissions ["firebase.projects.get"]
-[debug] [2020-01-21T20:22:45.880Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/verticals-47425:testIamPermissions  
-
-[debug] [2020-01-21T20:22:46.900Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T20:22:46.903Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425  
- 
-[debug] [2020-01-21T20:22:48.157Z] <<< HTTP RESPONSE 200
-[debug] [2020-01-21T20:22:48.161Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/verticals-47425/webApps/-/config  
- 
-[debug] [2020-01-21T20:22:49.445Z] <<< HTTP RESPONSE 200
-[info] i  hosting[chamados]: Serving hosting files from: public
-[info] +  hosting[chamados]: Local server: http://localhost:5000
+[info] ✔  hosting[chamados]: Local server: http://localhost:5000

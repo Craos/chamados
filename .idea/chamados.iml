@@ -4,16 +4,12 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="dhtmlx" level="application" />
-    <orderEntry type="library" name="jquery-3.2.1" level="application" />
-    <orderEntry type="library" name="jquery-3.4.1" level="application" />
-    <orderEntry type="library" name="roboto" level="application" />
     <orderEntry type="module" module-name="craos-material" />
-    <orderEntry type="library" name="font-awesome" level="application" />
     <orderEntry type="module" module-name="craos-material" />
-    <orderEntry type="library" name="mdb" level="application" />
-    <orderEntry type="library" name="popper" level="application" />
-    <orderEntry type="library" name="oauth" level="application" />
     <orderEntry type="module" module-name="craos-material" />
+    <orderEntry type="module" module-name="craos-material" />
+    <orderEntry type="module" module-name="craos-material" />
+    <orderEntry type="library" name="firebase-app" level="application" />
+    <orderEntry type="library" name="firebase-analytics" level="application" />
   </component>
 </module>

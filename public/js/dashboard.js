@@ -45,7 +45,6 @@ function dashboard() {
             data.filter(function (item) {
 
                 let filedate = window.dhx.date2str(new Date(item.filedate), '%d/%m - %H:%i');
-                // let situacao = situacoes.find(x => x.id === item.situacao).nome;
 
                 gridchamados.addRow(item.id, [item.cliente, item.situacao, item.chamados]);
             });
@@ -54,7 +53,7 @@ function dashboard() {
 
     let gridregistros = layoutdashboard.cells('c').attachGrid();
 
-    gridregistros.setHeader("Cliente, Situação, Equipamento, Horário de Abertura");
+    gridregistros.setHeader("Situação, Equipamento, Horário de Abertura");
     gridregistros.setInitWidths("200, 190, 100");
     gridregistros.setColAlign("left,left,left,left");
     gridregistros.init();
@@ -69,7 +68,7 @@ function dashboard() {
                 let hora_final = (item.hora_final !== null) ? window.dhx.date2str(new Date(item.data_final + ' ' + item.hora_final), '%H:%i:%s') : null;
 
 
-                gridregistros.addRow(item.id, [item.cliente,  item.equipamento, item.situacao, data_inicio]);
+                gridregistros.addRow(item.id, [item.equipamento, item.situacao, data_inicio]);
             });
         });
     }

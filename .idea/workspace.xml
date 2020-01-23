@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42c1445b-d242-4554-91a9-ecae4c5b5875" name="Default Changelist" comment="ajustes no ticket panel para controle de chamados abertos.">
-      <change afterPath="$PROJECT_DIR$/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/chamados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chamados.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/ctrl.a8IuAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/oauth.lw5KBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff4bfc22-797c-4782-80b9-795e7521fd00/storage_v2/_src_/database/oauth.lw5KBg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/equipamentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/equipamentos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/registros.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/registros.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/craos-material.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../verticals-portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../verticals-portal/css/mdb.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/css/mdb.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../verticals-portal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../verticals-portal/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +232,7 @@
       <workItem from="1579616523199" duration="18679000" />
       <workItem from="1579638255588" duration="5775000" />
       <workItem from="1579698763898" duration="10109000" />
+      <workItem from="1579721480458" duration="2300000" />
     </task>
     <task id="LOCAL-00001" summary="novos arquivos e configurações">
       <created>1578591115805</created>
@@ -526,13 +512,14 @@
     </state>
     <state x="244" y="-838" key="DiffContextDialog/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579028364876" />
     <state x="245" y="-846" width="1092" height="619" key="DiffContextDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579642669413" />
-    <state x="526" y="195" key="FileChooserDialogImpl" timestamp="1579700848147">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="739" y="289" width="426" height="496" key="FileChooserDialogImpl" timestamp="1579783033442">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="-761" key="FileChooserDialogImpl/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579190151297" />
     <state x="526" y="195" key="FileChooserDialogImpl/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579700848147" />
     <state x="460" y="-761" key="FileChooserDialogImpl/0.0.1366.728/-280.-1040.1920.1040@-280.-1040.1920.1040" timestamp="1579024954812" />
     <state x="460" y="-798" key="FileChooserDialogImpl/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578674094598" />
+    <state x="739" y="289" width="426" height="496" key="FileChooserDialogImpl/0.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1579783033442" />
     <state x="519" y="-651" width="347" height="198" key="Github.CreateGistDialog" timestamp="1579711955969">
       <screen x="-279" y="-1080" width="1920" height="1080" />
     </state>
@@ -636,8 +623,8 @@
     </state>
     <state x="-217" y="-948" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728/-309.-1040.1920.1040@-309.-1040.1920.1040" timestamp="1579117052804" />
     <state x="-187" y="-957" width="1736" height="865" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579639547758" />
-    <state x="475" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1579698818826">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="475" y="1336" key="com.intellij.ide.util.TipDialog" timestamp="1579721481290">
+      <screen x="0" y="1080" width="1366" height="768" />
     </state>
     <state x="389" y="-693" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-279.-1040.1920.1040@-279.-1040.1920.1040" timestamp="1579616530994" />
     <state x="475" y="243" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-279.-1040.1920.1040@0.0.1366.728" timestamp="1579698818826" />
@@ -646,6 +633,7 @@
     <state x="388" y="-733" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-280.-1080.1920.1040@-280.-1080.1920.1040" timestamp="1578591538596" />
     <state x="389" y="-700" key="com.intellij.ide.util.TipDialog/0.0.1366.738/-279.-1050.1920.1050@-279.-1050.1920.1050" timestamp="1579638257977" />
     <state x="388" y="-730" key="com.intellij.ide.util.TipDialog/0.0.1366.738/-280.-1080.1920.1050@-280.-1080.1920.1050" timestamp="1578683857706" />
+    <state x="475" y="1336" key="com.intellij.ide.util.TipDialog/0.1080.1366.768/0.0.1920.1080@0.1080.1366.768" timestamp="1579721481290" />
     <state x="0" y="0" width="1367" height="816" maximized="true" key="dock-window-1" timestamp="1579112480382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

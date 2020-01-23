@@ -39,19 +39,19 @@
 </body>
 <script>
 
-    let config = {
-        endpoint: 'https://api.craos.net:8443'
-    };
+     let config = {
+         endpoint: 'https://api.craos.net:8443'
+     };
 
-    if (!sessionStorage.user) {
-        let oauth = new VerticalsOauth();
-        oauth.Start();
-        oauth.ActivateLogin(function () {
-            new app();
-        });
-    } else {
-        new app();
-    }
+     if (!sessionStorage.user) {
+         let oauth = new VerticalsOauth();
+         oauth.Start();
+         oauth.ActivateLogin(function () {
+             new app();
+         });
+     } else {
+         new app();
+     }
 
 
 </script>

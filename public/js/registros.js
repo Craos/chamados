@@ -110,7 +110,7 @@ function registros() {
     let registros = layout.cells('b').attachGrid();
 
     registros.setHeader("Data Inicio,Hora Inicio, Equipamento, Descrição do Equipamento, Situação, Data de Retorno, Horario de Retorno");
-    registros.setInitWidths("100,100,150,400,150,100,100");
+    registros.setInitWidths("100,100,150,400,150,150");
     registros.setColAlign("left,left,left,left");
     registros.setColSorting("int,str,str,int");
     registros.init();
@@ -119,7 +119,6 @@ function registros() {
 
         registros.clearAll();
 
-        console.log(user);
 
         $.get( "http://api/ck/uptime?condominio=eq." + user.userinfo.condominio, function( data ) {
             data.filter(function (item) {
@@ -131,7 +130,6 @@ function registros() {
                 let exibirequipamento = 'Não definido';
 
                 listaequipamentos.filter(function (i) {
-                    console.debug(i);
                     if(i.id === item.equipamento){
                         exibirequipamento = i.nome;
                     }
